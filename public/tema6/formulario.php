@@ -2,23 +2,30 @@
 		
 		<p>
 			<label for=nombre>Nombre</label>
-			<input type="text" name="nombre" value="">
+			<input type="text" name="nombre" 
+			<?php mostrar_campo('nombre'); ?>
+			>
+			<?php mostrar_error_campo('nombre',$errores);?>
 		</p>
 		<p>
 			<label for=email>Email</label>
-			<input type="email" name="email">
+			<input type="email" name="email"
+			<?php mostrar_campo('email'); ?>
+			>
+			<?php mostrar_error_campo('email',$errores);?>
 
 		</p>
 		<p>
 			<label for=clave1>Clave</label>
-			<input type="password" name="clave1">
+			<input type="password" name="clave1"
+			<?php mostrar_error_campo('clave1',$errores);?>
 
-		</p>
+		></p>
 		<p>
 			<label for=clave2>Repetir Clave</label>
-			<input type="password" name="clave2">
-
-		</p>
+			<input type="password" name="clave2"
+			<?php mostrar_error_campo('clave2',$errores);?>
+		></p>
 
 
 			<input type="submit" name="Enviar">
