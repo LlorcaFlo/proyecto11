@@ -20,7 +20,7 @@
 		<li> <a href="Hoja1/EJ_07C/PedirNumero.php">Ejercicio 7 con Formulario</a> </li>
 		<li> <a href="PedirNumero2.php">Ejercicio 8</a> </li>
 		<li> <a href="Hoja1/EJ_09.php">Ejercicio 9</a> </li>
-		<li> <a href="Formulario.php">Ejercicio 10</a></li> 
+		<li> <a href="Formulario.php">Ejercicio 10</a></li>
 		</h4>
 	</ol>
 	<ol>
@@ -43,10 +43,10 @@
 			<li>Ejercicio 2</li>
 			<li>Ejercicio 3</li>
 			<li>Ejercicio 4</li>
-			
+
 			<li>Ejercicio 6</li>
 			<li>Ejercicio 7</li>
-			
+
 			<li>Ejercicio 9</li>
 	</ol>
 
@@ -57,11 +57,7 @@
 
 <li> <a href="tema6/index.php">Ejemplo de formulario</a> </li>
 
+<p><h1>Tema 8</h1></p>
 
-	
-
-
-
-
-
-
+<li> <a href="tema8/trim.php">Ejemplo de Trims</a> </li>
+<li> <a href="tema8/html.php">Ejemplo de funciones de cadena</a> </li>
