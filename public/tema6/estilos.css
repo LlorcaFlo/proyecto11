@@ -1,5 +1,13 @@
 body{
-     font-family: sans-serif;
+  background-image: linear-gradient(to right, #43C6AC , #191654);
+  font-family: "Times New Roman";
+  color:silver;
+
+}
+
+h1{
+  text-align: center;
+
 }
 .errorf{
     color: red;

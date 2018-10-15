@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Formularios Usables</title>
-	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<h1>Formularios usables</h1>
@@ -25,7 +25,7 @@
 		if ( $errores ) {
 			//mostrar_errores($errores);
 			include 'formulario.php';
-			
+
 		} else {
 			echo "Todo correcto, usuario registrado";
 		}

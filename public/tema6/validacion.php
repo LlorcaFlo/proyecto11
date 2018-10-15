@@ -16,6 +16,7 @@
 		if ( ! isset($_POST['email']) ) {
 			$errores['email'] = "No he recibido el email";
 		}
+		//
 		elseif ( strlen($_POST['email']) < 6) {
 			$errores['email'] = "El email no es válido";
 		}
