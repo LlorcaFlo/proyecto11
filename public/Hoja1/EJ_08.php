@@ -1,7 +1,7 @@
-<!-- Mostrar en una tabla el cuadrado y el cubo de los cinco primeros números enteros que siguen a uno 
+<!-- Mostrar en una tabla el cuadrado y el cubo de los cinco primeros números enteros que siguen a uno
   previamente introducido. Los datos deben aparecer encolumnados. -->
 <?php
-$Num=$_POST['numero']+1;
+$Num=7;
 $Cont=0;
 
 echo "<table align=center width=80% border=1 cellspacing=0 cellpadding=2>";

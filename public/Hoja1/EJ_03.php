@@ -4,8 +4,7 @@
 $radio=2.5;
 
 $longitud=2*pi()*$radio;
-$area = pi()*pi()*$radio;
-//$area = pow(pi()*2) * $radio;
+$area = pow(pi()*2) * $radio;
 
 echo "Dada una circunferencia de radio: " . $radio . " su longitud es: " . round($longitud,2) ." y su área es: " . round($area,2);
 

@@ -22,13 +22,10 @@
 	} else {
 
 	include 'validacion.php';
-
 		if ( $errores ) {
-
 			//mostrar_errores($errores);
 			include 'formulario.php';
-
-
+			
 		} else {
 			echo "Todo correcto, usuario registrado";
 		}

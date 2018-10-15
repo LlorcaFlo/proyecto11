@@ -9,7 +9,7 @@ $Edadactual=$fechaactual-$edad;
 if ($edad<=0) {
 	echo "<b>No has introducido ningún año</b>";
 } else {
-	echo "<b>Su edad actual es: ". $Edadactual. "años</b>";
+	echo "<b>Su edad actual es: " . $Edadactual. " años</b>";
 
 }
 	?>

@@ -5,7 +5,7 @@
 	<title>Formulario Edad</title>
 </head>
 <body>
-	<form action="Hoja1/EJ_10.php" method="post">
+	<form action="EJ_10.php" method="post">
 		<p>Escriba su año de nacimiento</p>
 	<input type="text" name="nacimiento">
 	<br>
