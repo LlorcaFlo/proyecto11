@@ -1,0 +1,96 @@
+body{
+  background-image: linear-gradient(to right, snow, floralwhite);
+  font-family: ;
+  }
+
+h3{
+  text-align: center;
+  background-image: linear-gradient(to right,  #17202a,  black);
+  color:white;
+  font-size: 40px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px ;
+    display: ;
+    border: 1px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px grey;
+  }
+  input[type=text]:hover{
+    border: 1px solid yellow;
+  }
+
+  input[type=password]  {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px ;
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px grey;
+}
+
+input[type=password]:hover{
+  border: 1px solid yellow;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color:#cd6155;
+    color: white;
+    padding: 14px ;
+    margin: 8px 3px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px grey;
+}
+input[type=submit]:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+    box-shadow: 4px 4px 5px grey;
+}
+label{
+  font-size: 15px;
+  display: inline-block;
+  width: 20%;
+}
+
+div {
+    border-radius: 5px;
+    background-image: linear-gradient(to right,   #212f3d , black);
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+form {
+  width: 70%;
+}
+img{
+  width: 570px;
+}
+
+.errorf{
+    color: gold;
+    font-size: 100%;
+    text-shadow: 0 0 0;
+
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}

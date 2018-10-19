@@ -6,6 +6,9 @@
 		<input type="submit" value="Reinicio">
 		</form>
 
+		<p><h1>Formulario Propio</h1></p>
+			<li> <a href="FormularioPropio/index.php">Formulario Propio</a></li>
+
 		</html>
 		<p><h1>Hoja de ejercicios Nº1</h1></p>
 		<h4>
@@ -59,3 +62,8 @@
 
 <li> <a href="tema8/trim.php">Ejemplo de Trims</a> </li>
 <li> <a href="tema8/html.php">Ejemplo de funciones de cadena</a> </li>
+
+
+<p><h1>Tema 11</h1></p>
+<li> <a href="tema11/ejemplo4.php">Ejemplo 4. Clase abstracta, Renderizas Plantillas</a> </li>
+<li> <a href="tema11/ejemplo5.php">Ejemplo 5. Carrito de la compra.</a> </li>
