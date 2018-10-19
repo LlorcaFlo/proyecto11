@@ -1,6 +1,5 @@
-<form action="index.php" method="POST">		
-<h4>
-				<label for="nombre">Nombre</label>
+<form action="index.php" method="POST">
+	<label for="nombre">Nombre</label>
 				<input type="text" class="form-control" name="nombre" placeholder="Nombre"
 
 				<?php mostrar_campo('nombre') ?>
@@ -38,9 +37,6 @@
 				<?php mostrar_campo('telefono') ?>
 				>
 				<?php mostrar_error_campo('telefono', $errores); ?><br>
-
-
-</h4>
 <button type="submit" class="btn btn-primary">Enviar</button>
 <div>
 
