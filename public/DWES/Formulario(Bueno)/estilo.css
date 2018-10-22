@@ -1,0 +1,90 @@
+body
+{
+	font-family: Arial;
+	background-image:linear-gradient(to right, #2e3941,  #25282a);
+	box-sizing: border-box;
+	text-align: center;
+	text-shadow: 0 1px 0;
+	font-size: bold;
+	border-radius: 10px;
+}
+
+h2{
+	text-shadow: 1px 1px 1px rgba(#dacb08, 0.78);
+	color:white;
+}
+form
+{
+	border-radius: 3px;
+	color: white;
+	padding: 10px;
+	font-size: 0.9em;
+	background-image:linear-gradient(to right,  #25282a , #2e3941);
+	margin: 0 auto;
+	width: 300px;
+	text-shadow: 1px 1px 1px rgba(#dacb08, 0.78);
+
+}
+a{
+	color: white;
+}
+input
+{
+	border: 0;
+	outline: none;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 0 1px 1px;
+
+}
+select
+{
+	border: 0;
+	outline: none;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 0 1px 1px;
+	width: 153px;
+}
+.nickini{
+	border-radius: 3px;
+	color: black;
+	padding: 10px;
+	font-size: 0.9em;
+	background-image:linear-gradient(to right,  #909497 , #bdc3c7);
+	margin: 0 auto;
+	width: 300px;
+
+}
+
+.field
+{
+	border: solid 1px white;
+	padding:5px;
+}
+.field:hover
+{
+	border-color: #2e4053;
+}
+
+.btn
+{
+	border-radius:3px;
+	display: inline-block;
+	padding: 5px 30px;
+	text-decoration: none;
+	text-shadow: 0 1px 0;
+	box-shadow: 0 1px 1px;
+}
+.btn-grey
+{
+	background-color: #ecf0f1;
+}
+.btn-grey:hover
+{
+	background-color: #bfc9ca;
+}
+.btn-grey:active
+{
+	background-color: #f2f3f4;
+}

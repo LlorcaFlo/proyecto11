@@ -1,0 +1,94 @@
+body{
+  background-image: linear-gradient(to right, snow, floralwhite);
+  font-family: monospace;
+  }
+
+h3{
+  text-align: center;
+  background-image: linear-gradient(to right,  #17202a,  black);
+  color:white;
+  font-size: 25px;
+  border-radius: 6px;
+  text-shadow: 0 0 2px red;
+   }
+
+input[type=text], select {
+    font-family: monospace;
+    width: 20%;
+    padding: 12px 12px;
+    margin: 8px ;
+    display: ;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px white;
+  }
+
+  input[type=password]  {
+    font-family: monospace;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 10px ;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px white;
+}
+
+input[type=submit] {
+    width: 47%;
+    background-color:#cd6155;
+    color: white;
+    padding: 14px ;
+    margin: 8px 3px;
+    border: 1px solid white;
+    border-radius: 4px; nb
+    cursor: pointer;
+    box-shadow: 4px 4px 5px grey;
+}
+input[type=submit]:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+    box-shadow: 4px 4px 5px grey;
+}
+label{
+  font-weight: bold;
+  font-size: 65%;
+  display: inline-block;
+  width: 15%;
+}
+
+div {
+  border-radius: 5px;
+  background-image: linear-gradient(to right,   #212f3d , black);
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  }
+
+form {
+  width: 90%;
+}
+
+img{
+  width: 570px;
+}
+
+.errorf{
+
+    color: gold;
+    font-size: 70%;
+    text-shadow: 0 0 0.4px pink;
+
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}

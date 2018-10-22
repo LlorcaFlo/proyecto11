@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicios_JavaScript</title>
+    <style type="text/css">
+    body{
+      background-image: linear-gradient(to left, #FF6666 , #CC3333);
+    }
+h1{
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+}    
+form{
+  border-radius: 3px;
+  color: black;
+  padding: 10px;
+  font-size: 0.9em;
+  background-image:linear-gradient(to right,  #CC0000 , #990000);
+  margin: 0 auto;
+  width: 100px;
+}
+
+.btn
+{
+  border-radius:5px;
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white;
+  box-shadow: 0 1px 2px;
+}
+.btn-grey
+{
+  background-color: #ecf0f1;
+}
+.btn-grey:hover
+{
+  background-color: #bfc9ca;
+}
+.btn-grey:active
+{
+  background-color: #f2f3f4;
+}
+
+
+    </style>
+    <script>
+
+    window.addEventListener("load",botones,false);
+    window.addEventListener("load",botones2,false);
+
+    function botones () {
+			boton1.addEventListener("click",Variables,false);
+      boton2.addEventListener("click",SumaMulti,false);
+      boton3.addEventListener("click",Mayor,false);
+      boton4.addEventListener("click",Notas,false);
+      boton5.addEventListener("click",Mayor3,false);
+      boton6.addEventListener("click",Mes,false);
+      boton7.addEventListener("click",UnoCinco,false);
+      boton8.addEventListener("click",Cien,false);
+      boton9.addEventListener("click",Suma5,false);
+      boton10.addEventListener("click",Digitos,false);
+      boton11.addEventListener("click",Primos,false);
+    }
+    function botones2(){
+       boton13.addEventListener("click",Cadena,false);
+       boton14.addEventListener("click",CambioLetras,false);
+       boton15.addEventListener("click",Cargar,false);
+    }
+    /*Ejercicio 1*/
+    function Variables() {
+
+      var nombre = "José";
+      var edad = 33;
+      var altura = 1.73;
+      var estado = "Soltero";
+
+      document.write("-El nombre es: " + nombre +"<br>"
+      +"-La edad es: " + edad +"<br>"
+      +"-La altura es: " + altura +"<br>"
+      +"-Y su estado es: " + estado + "."); }
+    /*Ejercicio 2*/
+    function SumaMulti(){
+
+      var Num1 = parseInt(prompt("Introduzca un número"));
+      var Num2 = parseInt(prompt("Introduzca un segundo número"));
+      
+      alert("La suma de " + Num1 + " + " + Num2 + " = " + (Num1+Num2) + ".")
+      alert("Y la multimplicacion de " + Num1 + " x " + Num2 + " = " + (Num1*Num2) + ".")  }
+    /*Ejercicio 3*/
+    function Mayor(){
+
+      var Num1 = parseInt(prompt("Introduzca un número"));
+      var Num2 = parseInt(prompt("Introduzca un segundo número"));
+        if (Num1>Num2){
+      alert(Num1 + " es mayor.");
+        }else if(Num1==Num2){
+      alert("Son los mismos números");
+      }else{
+        alert(Num2 + " es mayor.");
+      }}
+    /*Ejercicio 4*/
+    function Notas(){
+      var Nota1 = parseInt(prompt("Introduzca un número"));
+      var Nota2 = parseInt(prompt("Introduzca un segundo número"));
+      var Nota3 = parseInt(prompt("Introduzca un tercer número"));
+      var Nota4 = (Nota1+Nota2+Nota3);
+
+      if (Nota4>=7)
+      {
+                    alert("Promocionado.")
+      }
+      else if(Nota4>=4)
+      {
+                    alert("Regular.");
+      }
+      else
+      {
+                    alert("Suspenso.");
+      }}
+    /*Ejercicio 5*/
+    function Mayor3(){
+      var Num1 = parseInt(prompt("Introduzca un número"));
+      var Num2 = parseInt(prompt("Introduzca un segundo número"));
+      var Num3 = parseInt(prompt("Introduzca un tercer número"));
+
+      if(Num1>Num2&&Num1>Num3){
+        alert(Num1 + "Es el mayor de los tres");
+      }
+      else if(Num2>Num1&&Num2>Num3){
+        alert(Num2 + "Es el mayor de los tres");
+      }
+      else if(Num3>Num1&&Num3>Num2){
+        alert(Num3+ "Es el mayor de los tres");
+      } }
+    /*Ejercicio 6*/
+    function Mes(){
+      var mes = prompt("Introduzca un mes del año").toLowerCase();
+      var meses = ["","enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+            for (var i = 0; i<meses.length; i++)
+              {
+              if(meses[i]==mes){
+                  if(i<=3){
+                      alert("Primer trimestre.");
+                  } else if(i>3 && i<=6){
+                      alert("Segundo trimestre.");
+                  } else if(i>6 && i<=9){
+                      alert("Tercer trimestre.");
+                  } else{
+                      alert("Cuarto trimestre.");
+                  }
+                                }
+              }
+            }
+    /*Ejercicio 7*/
+    function UnoCinco(){
+      var Num = prompt("Introduzca un número entre el 1 al 5");
+
+      switch (Num) {
+        case '1':
+        alert('Uno');
+        break;
+        case '2':
+        alert('Dos');
+        break;
+        case '3':
+        alert('Tres');
+        break;
+        case '4':
+        alert('Cuatro');
+        break;
+        case '5':
+        alert('Cinco');
+        break;
+        default:
+        alert("El número introducido no es válido.");
+      }}
+    /*Ejercicio 8*/
+    function Cien(){
+      for (var i=1;i<=100;i++) {
+
+        if (i%10 == 0){
+          document.write("<br>");
+        }
+        document.write("Número: " + i + " ");
+      } }
+    /*Ejercicio 9*/
+    function Suma5(){
+      var Num1 = parseInt(prompt("Introduzca un número"));
+      var Num2 = parseInt(prompt("Introduzca un segundo número"));
+      var Num3 = parseInt(prompt("Introduzca un tercer número"));
+      var Num4 = parseInt(prompt("Introduzca un cuarto número"));
+      var Num5 = parseInt(prompt("Introduzca un quinto número"));
+
+      alert("La suma de los cinco números es: " + (Num1+Num2+Num3+Num4+Num5) +"."); }
+    /*Ejercicio 10*/
+    function Digitos(){
+
+      alert("Crea un programa en JavaScript que pida un número entre 0 y 999. A continuación se calculará y se mostrará el número de dígitos que tiene el número que hemos introducido.");
+
+       var Num1 = prompt("Introduzca un número");
+       alert(Num1 + ': Contiene ' + Num1.length + ' digitos.'); 
+                       }
+  
+    /*Ejercicio 11*/
+
+    /*Ejercicio 12*/
+    
+   /*Ejercicio 13*/
+   function Cadena(){
+
+        var cadena = prompt("Inserte una cadena de texto: ");
+
+        if(cadena.length%2==0){
+
+          var cadena1 = cadena.substring(0,cadena.length/2);
+          var cadena2 = cadena.substring(cadena.length/2,cadena.length);
+
+          alert(cadena1 + ' ' + cadena2);
+
+        }else {
+
+          var cadena1 = cadena.substring(0,cadena.length/2);
+          var cadena2 = cadena.substring(cadena.length/2, cadena.length);
+
+          alert(cadena1 + ' ' + cadena2);
+
+        }
+
+}
+   function CambioLetras(){
+  /*Crea un programa en JavaScript que pida por pantalla una frase, y que cambie en todo la cadena las letras aes por ues, las es por oes, la ies por aes, las oes por es y las ues por espacios en blanco.*/
+  var sep="";
+  var cadena = prompt("Inserte cadena de texto: ").split(sep);;
+
+  for(var i=0;i<cadena.length;i++){
+    if(cadena[i] == "a"){
+         cadena[i] = "u";
+    }
+    else if(cadena[i] == "e"){
+        cadena[i] = "o";
+    }
+    else if(cadena[i] == "i"){
+        cadena[i] = "a";
+    }
+    else if(cadena[i] == "o"){
+        cadena[i] = "e";
+    }
+    else if(cadena[i] == "u"){
+        cadena[i] = " ";
+    } 
+
+  }
+      cadena=cadena.toString();
+      cadena=cadena.replace(/,/g, "");
+      alert(cadena);
+      
+  }
+
+  function Cargar(){
+
+    var array = [5];
+    for(i=1;i<=5;i++){
+
+        array.spice(i-1,0,Num1);
+    }
+
+  }
+//   
+  
+
+
+  </script>
+
+  </head>
+  <body>
+    <h1>Ejercicios JavaScript(Jośe Llorca)</h1>
+    <form>
+      
+  
+    <input type="button" name="" value="Ejercicio 01" id="boton1" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 02" id="boton2" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 03" id="boton3" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 04" id="boton4" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 05" id="boton5" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 06" id="boton6" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 07" id="boton7" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 08" id="boton8" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 09" id="boton9" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 10" id="boton10" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 11" id="boton11" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 13" id="boton13" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 14" id="boton14" class="btn btn-grey"><br>
+    <input type="button" name="" value="Ejercicio 15" id="boton15" class="btn btn-grey"><br>
+  </form>
+  </body>
+</html>

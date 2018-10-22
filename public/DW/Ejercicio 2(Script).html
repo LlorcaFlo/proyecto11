@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicios JavaScript(José Llorca)</title>
+	<script>
+		window.addEventListener("load",botones,false);
+
+		function botones () {
+			boton2.addEventListener("click",Mensaje,false);	
+			boton3.addEventListener("click",Arrays,false);
+			boton4.addEventListener("click",Relacion,false);
+			boton6.addEventListener("click",NIF,false);
+			boton7.addEventListener("click",FOR,false);
+
+		}
+		function Mensaje(){
+			var mensaje = "Hola Mundo!!! \n\"Que sencillo es incluir comillas simples \' y comillas dobles \" en un texto empleando javascript\""
+
+			document.write(mensaje);
+		}
+
+		function Arrays(){
+
+				var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+				//for (i=0;i<meses.length;i++){
+				//	alert(meses[i]);
+
+				 for(var z of meses) {
+				// 	if (z === "Octubre") {
+				// 		alert(z + " es el mes de mi cumpleaños");
+				// 	}else {
+				// 		alert(z);
+				// 	}
+					z==="Octubre" ? alert(z + " ... es el mes de mi cumpleaños") : alert(z);
+				 }	
+
+		}
+
+		function Relacion(){
+
+			 var valores = [true, 5, false, "hola", "adios", 2];
+			//Primera parte
+			 valores[3] > valores[4] ? alert("hola es mayor que adios") : alert("adios es mayor que hola");
+
+			//Segunda parte
+			alert(valores[0] && valores[2]);//false
+			alert(valores[0] || valores[2]);//true
+
+			//Tercera parte
+			alert(valores[1]+valores[5]);
+			alert(valores[1]-valores[5]);
+			alert(valores[1]*valores[5]);
+			alert(valores[1]/valores[5]);
+			alert(valores[1]%valores[5]);
+		}
+
+		function NIF(){
+
+			var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B','N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+			var NumNif = prompt("Indique cual es su Dni");
+
+			var NifIntro = NumNif.substring(0,8);
+			var LetraNif = NumNif.slice(8).toUpperCase();
+
+			var letraCal=letras[NifIntro % 23]
+
+			if (NumNif < 0 || NumNif > 99999999) {
+				alert("Su Dni no es válido");
+			} else {
+
+					if(LetraNif != letraCal){
+						alert("El Dni no es válido");
+					}else{
+						alert("El Dni introducido es válido");
+					}
+				}
+
+		}
+
+		 function FOR(){
+		 	
+		 	for (i=0;i<5+1;i++){
+		 		alert("Esta es la secuencia " +i+ " del bucle");
+			}
+		 }
+		</script>
+	
+</head>
+<body>
+	<h1>Ejercicios JavaScript(Jośe Llorca)</h1>
+	<p>Ejercicio 2</p>
+	<input type="button" name="" value="Mensaje" id="boton2">
+	<p>Ejercicio 3</p>
+	<input type="button" name="" value="Arrays" id="boton3">
+	<p>Ejercicio 4</p>
+	<input type="button" name="" value="Relacion" id="boton4">
+	<p>Ejercicio 6</p>
+	<input type="button" name="" value="Nif" id="boton6">
+	<p>Ejercicio 7</p>
+	<input type="button" name="" value="FOR" id="boton7">
+</body>
+</html>

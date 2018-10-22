@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+	window.addEventListener("load",capturaEventosClic);
+
+	date = new Date();
+	var diassemana=['','Lunes','Martes','Miércoles','Jueves','Viernes','Sabado','Domingo'];
+	
+	var botones = ['boton1','boton2','boton3','boton4'];
+
+	var funciones = [ ];
+
+
+	funciones [0]=function HORA (){
+
+			alert(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+	}
+
+	funciones [1]=function FECHA (){
+
+			alert(date.getDate() + "/" + (date.getMonth() +1) + "/" + date.getFullYear());
+	}
+
+	funciones [2]=function DIA (){
+		alert(diassemana[date.getDay()]);
+
+	}
+
+	funciones [3]=function TODO() {
+		function HORA ();
+		function FECHA (); 
+		function DIA ();
+	}
+
+	 function capturaEventosClic(){
+        for( i in botones ){
+          document.getElementById(botones[i]).addEventListener('click',funciones[i]);
+        }
+      }
+      
+
+	</script>
+	<title></title>
+</head>
+<body>
+
+	<input type="button" name="" id="boton1" value="Hora"><br>
+	<input type="button" name="" id="boton2" value="Fecha"><br>
+	<input type="button" name="" id="boton3" value="Día"><br>
+	<input type="button" name="" id="boton4" value="Todo"><br>
+
+
+</body>
+</html>

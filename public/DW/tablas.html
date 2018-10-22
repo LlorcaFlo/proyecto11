@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+<html>
+<title> </title>
+</head>
+<body>
+<script type = "text / javascript">
+
+Tablas var = new Array ();
+res var = new Array ();
+
+for (var i = 0; i <= 9; i ++) {
+for (var j = 0; j <= 9; j ++) {
+res[j] = i * j;
+}
+Tablas [i] = res.slice();
+}
+    
+for (var i = 0; i <= 9; i ++) {
+res = Tablas[i];
+var aux = "";
+for (var j = 0; j <10; j ++) {
+aux += i + "*" + j + "=" + res[j] + "\n";
+}
+alerta (aux);
+
+}
+</script>
+</body>
+</html>

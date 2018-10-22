@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+		var tablas = new Array(10);
+
+		for(var i=1; i<tablas.length; i++) {
+
+    	tablas[i] = new Array(10);
+
+		}
+		for(var i=1; i<10; i++) {
+    	//Bucle que recorre el array que está en la posición i
+    	for(var j=1; j<10; j++) {
+    		
+    		tablas[j] = i*j;
+    		var mensaje =  i + "x" + j + "=" + [i][j];
+    		
+			alert(mensaje); 
+    			}
+    			   
+    }
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

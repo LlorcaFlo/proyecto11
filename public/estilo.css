@@ -1,0 +1,21 @@
+
+
+div {
+	background-image: linear-gradient(to right, rgb(40, 40, 40),rgb(0, 0, 0));
+	font-family: ;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+}
+a, h1, h3, li {
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px rgb(175, 175, 175);
+}
+
+form{
+	border-radius: 5px;
+	background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(40, 40, 40));
+	margin: 0 auto;
+	width: 300px;
+	border-color: rgb(175, 175, 175);
+}
