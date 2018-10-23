@@ -1,0 +1,19 @@
+#uno{
+	width: 300px;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25px;
+	margin-left: 15em;
+	background-color: pink;
+}
+#dos{
+
+	border: 30px dotted red;
+
+}
+
+#tres{
+	width: 120px;
+	padding: 10px;
+	background-color: rgba(42,224,237,0.69);
+}

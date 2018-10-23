@@ -1,0 +1,171 @@
+body{
+    background-image:url("matrix.png");
+    background-attachment: fixed;
+}
+
+a:link{
+	color:red;
+}
+a:hover{
+	color:white;
+}
+a:visited{
+	color:yellow;
+}
+a:active{
+	color:blue;
+}
+.centrar{
+	text-align: center;
+}
+.derecha{
+	text-align: right;
+}
+
+h1{
+	font-family: 'Tangerine', serif;
+ 	font-size: 48px;
+  	text-shadow: 4px 4px 4px #aaa;
+	color:white;
+	text-shadow: 2px 2px 2px grey;
+}
+.letter{
+	letter-spacing:3px;
+	
+}
+#cab1{
+direction: rtl;
+}
+#cab2{
+	text-align: center;
+}
+#cab3{
+	word-spacing: 10px;
+}
+
+p{
+	font-family: 'Mali', cursive;
+	font-size: 20px;
+	color:white;
+}
+#uno{
+  background: hsla(175,25%,70%,0.2);
+  color: white;
+  border-style: dotted;
+  border-color: red;
+  border-radius: 70%;
+}
+#dos{
+ 	background: rgb(255,0,0);
+  color: white;
+  border: white 20px;
+  border-style: double;
+  border-top: dotted white 3px;
+  border-bottom: dotted white 3px;
+  border-radius: 25%;
+
+  text-decoration: overline;
+}
+#tres{
+ background: rgb(170,120,170);
+  color:black;
+  border:2px solid gold;
+  border-radius:35%;
+  font-size:25px;
+  border-top: solid blue 4px;
+  border-left: solid  yellow 4px;
+  border-right: solid  red 4px;
+  border-bottom: solid green 4px;
+
+	text-decoration: line-through;
+}
+#cuatro{
+	background: black;
+  color:orange;
+  border:2px solid gold;
+  font-size:20px;
+  text-align:center;
+  border-top: solid blue 2px;
+  border-left: dotted  yellow 2px;
+  border-right: dotted  yellow 2px;
+  border-bottom: solid blue 2px;
+
+	text-decoration: underline;
+}
+
+#cinco{
+	  color:gold;
+  border:2px solid gold;
+  border-radius:35%;
+  font-size:25px;
+  border-left: solid 20px white;
+  border-right: solid 20px white;
+  border-bottom: dotted white;
+}
+
+
+#seis{
+	color: yellow;
+  border-style: solid;
+  border-color: rgba(35,35,100,0.5);
+  border-radius: 2%;
+}
+#siete{
+	color: blue;
+	border-style: dotted;
+	border-color: blue;
+	border-radius: 5%;
+}
+#ocho{
+	border-style: double;
+	border-color: black;
+	font-size: 20px;
+}
+#nueve{
+
+	border-style: dotted;
+	border-color: yellow;
+	font-size: 30px;
+
+}
+#diez{
+	border-style: double;
+	border-color: white;
+	font-size: 15px;
+
+}
+.btn{
+	background-image: url(stripes.jpg);
+	border-radius: 35%;
+	border-color: white;
+	border-style: double;
+	
+	padding: 10px 50px;
+}
+.btn:hover{
+	background-image: url(índice2.jpg);
+}
+.btn:active{
+	background-image: url(arrugado.jpg);
+}
+#blue{
+	background-color: blue;
+}
+#red{
+	background-color: red;
+}
+
+.arriba{
+	border-style: solid;
+	border-color: red;
+	background-color: blue;
+	border-radius: 35%;
+	padding: 2px 30px;
+}
+.abajo{
+	border-style: solid;
+	border-color: blue;
+	background-color: red;
+	border-radius: 35%;
+	padding: 2px 30px;
+}
