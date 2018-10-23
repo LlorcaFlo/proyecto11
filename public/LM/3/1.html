@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<link rel="stylesheet" href="../../DWES/css/bootstrap.min.css">
+
+<style media="screen">
+
+form{
+  background-image: linear-gradient(to left, blue, black);
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px 2px grey;
+}
+input{
+  border-radius: 50%;
+  text-align: center;
+  color:black;
+  text-shadow: 2px 2px 2px grey;
+}
+
+</style>
+
+  <body>
+    <form>
+
+  <div class="form-row">
+   <div class="col">
+     <label for="Nombre">Nombre</label>
+     <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+
+      <label for="Apellido">Apellido</label>
+      <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+
+      <label for="Email">Email</label>
+      <input type="email" class="form-control" id="Email" placeholder="Email">
+
+      <label for="Password">Password</label>
+      <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+
+      <label for="repassword">Repita Password</label>
+      <input type="password" class="form-control" id="repassword" placeholder="Repita contraseña">
+
+      <label for="dni">Dni</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Dni">
+
+      <label for="ciudad">Ciudad</label>
+      <select id="ciudad" class="form-control">
+        <option selected>Seleccione una...</option>
+        <option>España</option>
+        <option>Alemania</option>
+        <option>Francia</option>
+        <option>Italia</option>
+        <option>Holanda</option>
+        <option>Andorra</option>
+      </select>
+        Registrarme
+      </label><br><br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+
+</form>
+  </body>
+</html>
