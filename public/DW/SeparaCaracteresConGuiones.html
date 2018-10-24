@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        let cadena = 'Hola caracola que hay de nuevo';
+        let cadenaGuiones = '';
+
+        for ( let z = 0; z < cadena.length; z ++ ) {
+
+            cadenaGuiones += cadena.charAt(z);
+
+            if ( cadena.charAt ( z + 1 ) === ' ' || cadena.charAt ( z ) === ' ' || cadena.charAt ( z + 1 ) == '' ) {
+                continue;
+            }
+            cadenaGuiones += '-';
+        }
+
+        document.write(cadenaGuiones);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

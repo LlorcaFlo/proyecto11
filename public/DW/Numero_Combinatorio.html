@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function factorial (num) {
+        if (num === 0) return 1;
+        for (let z = num - 1; z > 1; z--) {
+            num *= z;
+        }
+        return (num);
+    }
+
+    function calculaCombinatorio (num1, num2) {
+        let dividendo = factorial(num1);
+        let divisor1 = factorial(num2);
+        let divisor2 = factorial((num1 - num2));
+        return document.write('El número combinatorio de ' + num1 + ' sobre '
+            + num2 + ' es ' + dividendo / (divisor1 * divisor2));
+    }
+
+    function numCombinatorio () {
+        let numeros = prompt ('Introduce dos números');
+        let num1 = numeros.split(' ')[0];
+        let num2 = numeros.split(' ')[1];
+
+        if (num1 < 0 || num2 < 0 ) {
+            alert ('No se puede operar con numeros negativos');
+        } else if (num2 > num1){
+            let continuar = confirm('Obtendrá el número combinatorio de ' + num2
+                                    + ' sobre ' + num1 + '. ¿Continuar?');
+            if (continuar) {
+               let numero1 = num1;
+               num1 = num2;
+               num2 = numero1;
+               calculaCombinatorio (num1, num2);
+            } else {
+                alert ('Hasta otra');
+            }
+        } else {
+            calculaCombinatorio (num1, num2);
+        }
+
+    }
+
+    numCombinatorio();
+
+</script>
+</body>
+</html>

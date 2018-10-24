@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+    var c = 100;
+    var j = 2;
+    var numerosPrimos = [];
+
+    for (; j < c; j++) {
+        if (primo(j)) {
+          numerosPrimos.push(j);
+        }
+    }
+  //  alert("Los números primos son: " + numerosPrimos);
+    function primo(numero) {
+        for (var i = 2; i < numero; i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+        return numero;
+    }
+
+
+</script>
+<body>
+</body>
+</html>

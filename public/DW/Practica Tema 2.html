@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+
+    /* Ejercicio 1*/
+
+    let nombre = 'Pepe';
+    let edad = 34;
+    let altura = 1.74;
+    let estado = 'soltero';
+
+    console.log ( 'Ejercicio 1\n\n' + nombre, edad, altura, estado );
+
+    /* Ejercicio 2*/
+
+    let numeros = prompt ( 'Ejercicio 2. Suma y multiplica números\n\nIntroduce dos números' );
+    let numero1 = parseInt ( numeros.split ( ' ' )[ 0 ] );
+    let numero2 = parseInt ( numeros.split ( ' ' )[ 1 ] );
+
+    console.log ( 'Ejercicio 2\n\n' + numero1 + ' + ' + numero2 + ' = ' + ( numero1 + numero2 ) +
+        '\n\n' + numero1 + ' x ' + numero2 + ' = ' + ( numero1 * numero2 ) );
+
+    /* Ejercicio 3*/
+
+    let nums = prompt ( 'Ejercicio 3. Numero mayor\n\nIntroduce dos números' );
+    let n1 = nums.split ( ' ' )[ 0 ];
+    let n2 = nums.split ( ' ' )[ 1 ];
+
+    n1 > n2 ? console.log ( 'Ejercicio 3\n\nEl mayor es: ' + n1 ) :
+        console.log ( 'Ejercicio 3\n\nEl numero mayor es: ' + n2 );
+
+    /* Ejercicio 4*/
+
+    let nota = prompt ( 'Ejercicio 4. Califica notas\n\nIntroduce tres notas' );
+
+    let nota1 = parseInt ( nota.split ( ' ' )[ 0 ] );
+    let nota2 = parseInt ( nota.split ( ' ' )[ 1 ] );
+    let nota3 = parseInt ( nota.split ( ' ' )[ 2 ] );
+
+    let media = ( nota1 + nota2 + nota3 ) / 3;
+
+    if ( media >= 7 ) console.log ( 'Ejercicio 4\n\nPromocionado' );
+    else if ( media >= 4 && media < 7 ) console.log ( 'Ejercicio 4\n\nregular' );
+    else console.log ( 'Ejercicio 4\n\nsupenso' );
+
+    /* Ejercicio 5*/
+
+    let notas = prompt ( 'Ejercicio 5. Numero mayor\n\nIntroduce tres numeros' );
+
+    let num1 = parseInt ( notas.split ( ' ' )[ 0 ] );
+    let num2 = parseInt ( notas.split ( ' ' )[ 1 ] );
+    let num3 = parseInt ( notas.split ( ' ' )[ 2 ] );
+
+    if ( num1 > num2 ) {
+        if ( num1 > num3 ) console.log ( 'Ejercicio 5\n\nEl mayor es ' + num1 );
+        else console.log ( 'Ejercicio 5\n\nEl mayor es ' + num3 );
+    } else if ( num2 > num3 ) console.log ( 'Ejercicio 5\n\nEl mayor es ' + num2 );
+    else console.log ( 'Ejercicio 5\n\nEl mayor es ' + num3 );
+
+    /* Ejercicio 6*/
+
+    let mes = prompt ( 'Ejercicio 6. Muestra trimestre\n\nIntroduce un mes' );
+
+    let trimestres = [
+        [ 'enero', 'febrero', 'marzo' ],
+        [ 'abril', 'mayo', 'junio' ],
+        [ 'julio', 'agosto', 'septiembre' ],
+        [ 'octubre', 'noviembre', 'diciembre' ]
+    ];
+
+    for ( let z = 0; z < trimestres.length; z ++ ) {
+        for ( let j = 0; j < trimestres[ z ].length; j ++ ) {
+            if ( trimestres[ z ][ j ] === mes ) {
+                console.log ( 'Ejercicio 6\n\nEl mes ' + mes
+                    + ' pertenece al trimestre ' + ( z + 1 ) );
+            }
+        }
+    }
+
+    /* Ejercicio 7*/
+
+    let num = prompt ( 'Ejercicio 7. Nombre de número\n\n Introduce un número del 1 al 5' );
+
+    switch ( num ) {
+        case '1':
+            console.log ( 'Ejercicio 7\n\nUno' );
+            break;
+        case '2':
+            console.log ( 'Ejercicio 7\n\nDos' );
+            break;
+        case '3':
+            console.log ( 'Ejercicio 7\n\nTres' );
+            break;
+        case '4':
+            console.log ( 'Ejercicio 7\n\nCuatro' );
+            break;
+        case '5':
+            console.log ( 'Ejercicio 7\n\nCinco' );
+            break;
+        default:
+            alert ( 'Introduce un número del 1 al 5' );
+    }
+
+    /* Ejercicio 8*/
+
+    let ok = confirm ('Mostrar números del 1 al 100');
+
+    if (ok) {
+        for ( let z = 1; z <= 100; z ++ ) {
+            console.log (z);
+        }
+    }
+
+    /* Ejercicio 9*/
+
+    let number = prompt ( 'Ejercicio 9. Suma numeros\n\nIntroduce cinco numeros' );
+    let arrayNum = number.split ( ' ' );
+
+    console.log ( 'Ejercicio 9\n\nLa suma es: ' + (parseInt ( arrayNum[ 0 ] ) + parseInt ( arrayNum[ 1 ] ) + parseInt ( arrayNum[ 2 ] ) +
+        parseInt ( arrayNum[ 3 ] ) + parseInt ( arrayNum[ 4 ] ) ));
+
+    /* Ejercicio 10*/
+
+    let nume = prompt ( 'Ejercicio 10\n\nCalcula digitos\n\nIntroduce un número' );
+
+    if ( nume.length === 3 ) console.log ( 'Ejercicio 10\n\nEl número ' + nume + ' tiene  tres dígitos' );
+    else if ( nume.length === 2 ) console.log ( 'Ejercicio 10\n\nEl número ' + nume + ' tiene dos dígitos' );
+    else console.log ( 'Ejercicio 10\n\nEl número ' + nume + ' tiene un dígito' );
+
+    /* Ejercicio 11*/
+
+    let numer = parseInt ( prompt ( 'Ejercicio 11\n\nIngrese un numero entre 1 y 99' ) );
+    let divisor = 2;
+    let arrayDivisores = [];
+
+    while ( numer > 1 ) {
+        if ( numer % divisor === 0 ) {
+            arrayDivisores.push ( divisor );
+            numer /= divisor;
+        } else divisor ++;
+    }
+
+    let mensaje = arrayDivisores.join ( ', ' );
+    console.log ( 'Ejercicio 11\n\nDivisores: ' + mensaje );
+
+    /* Ejercicio 12*/
+
+    let nm = parseInt ( prompt ( 'Ejercicio 12. Divisores Primos\n\nIngrese un numero entre 1 y 99' ) );
+    let numero = nm;
+    let div = 2;
+    let arrayDiv = [];
+
+    while ( nm > 1 ) {
+        if ( nm % div === 0 ) {
+            arrayDiv.push ( div );
+            nm /= div;
+        } else div ++;
+    }
+
+    let message = arrayDiv.join ( ' x ' );
+    console.log ( 'Ejercicio 12\n\n' + numero + ' = ' + message );
+
+    /* Ejercicio 13*/
+
+    let string = prompt ( 'Ejercicio 13: Divide subcadenas\n\nIntroduce una frase' );
+
+    mitad1 = string.slice ( 0, string.length / 2 );
+    mitad2 = string.slice ( string.length / 2, );
+
+    console.log ( 'Ejercicio 13\n\nSubcadena 1 = ' + mitad1 + '\n\n' + 'Subcadena 2 = ' + mitad2 );
+
+    /* Ejercicio 14*/
+
+    let cadena = prompt ( "Ejercicio 14. Cambia vocales\n\nIntroduce una frase" );
+    let array = [];
+
+    for ( let z = 0; z < cadena.length; z ++ ) {
+
+        if ( cadena.charAt ( z ) === 'a' ) {
+            array[ z ] = 'u';
+            continue;
+        }
+        if ( cadena.charAt ( z ) === 'e' ) {
+            array[ z ] = 'o';
+            continue;
+        }
+        if ( cadena.charAt ( z ) === 'i' ) {
+            array[ z ] = 'a';
+            continue;
+        }
+        if ( cadena.charAt ( z ) === 'o' ) {
+            array[ z ] = 'e';
+            continue;
+        }
+        if ( cadena.charAt ( z ) === 'u' ) {
+            array[ z ] = ' ';
+            continue;
+        }
+
+        array[ z ] = cadena.charAt ( z );
+    }
+
+    let cadenaCambiada = '';
+    for ( let z = 0; z < array.length; z ++ ) {
+        cadenaCambiada += array[ z ];
+    }
+
+    console.log ('Ejercicio 14\n\n' + cadena + '\n' + cadenaCambiada);
+
+    /* Ejercicio 15*/
+
+    function calcular ($array) {
+        let acum = 0;
+        for ( let z = 0; z < $array.length ; z ++ ) {
+            acum += parseInt($array[z]);
+        }
+
+        console.log ('Ejercicio 15\n\nSuma = ' + acum);
+    }
+
+    function mostrarSuma () {
+        let numeros = prompt ('Ejercico 15. Funcion suma numeros\n\nIntroduce cinco números');
+        let arrayNum = numeros.split(' ');
+        calcular(arrayNum);
+    }
+    mostrarSuma();
+
+
+</script>
+<body>
+
+</body>
+</html>

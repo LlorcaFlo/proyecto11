@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  <script type="text/javascript">
+
+  var pais = ['Alemania', 'Austria', 'Bélgica', 'Chipre', 'Eslovaquia', 'Eslovenia',
+  'Espana', 'Estonia', 'Finlandia', 'Francia', 'Grecia', 'Irlanda', 'Italia', 'Letonia',
+  'Lituania', 'Luxemburgo', 'Malta', 'Países Bajos','Portugal'];
+
+  var pais1 = ['Rumania','Croacia','Bulgaria','Hungría',
+  'Polonia','República Checa','Suecia','Dinamarca','Reino Unido'];
+
+  var moneda =['Leu','Kuna','Lev','Forinto','Złoty','Corona checa','Corona sueca',
+  'Corona danesa','Libra esterlina'];
+
+
+  var pa = false;
+  do{
+    var z = prompt("Introduzca un pais: ");
+
+    for (i=0; i<pais.length; i++){
+      if(pais[i]===z) {
+        pa = true;
+        alert("Es un pais de la Unión Europea");
+
+      for (j=0; j<pais1.length; j++) {
+        if(pais1[j]===z){
+          alert("pero su moneda es " + moneda[j] + ".");
+          }
+        }
+      }
+    }
+
+  }while(pa == false);
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>

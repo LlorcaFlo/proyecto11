@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+
+
+	var pais = ['Alemania', 'Austria', 'Bélgica', 'Chipre', 'Eslovaquia', 'Eslovenia',
+	'Espana', 'Estonia', 'Finlandia', 'Francia', 'Grecia', 'Irlanda', 'Italia', 'Letonia',
+	'Lituania', 'Luxemburgo', 'Malta', 'Países Bajos','Portugal'];
+
+	var pais1 = ['Rumania','Croacia','Bulgaria','Hungría',
+	'Polonia','República Checa','Suecia','Dinamarca','Reino Unido'];
+var pa=1;
+while(pa>0){
+var pa=1;
+
+var z = prompt("Escriba un pais: ");
+
+		if (pais.includes(z)){
+			alert("Es de la unión europea");
+			pa--;
+		}
+		if(pais1.includes(z)){
+			if(z=='Rumania'){
+			alert("Es de la unión europea y su moneda es el Leu rumano.");
+			pa--;
+			}
+			if(z=='Croacia'){
+			alert("Es de la unión europea y su moneda es Kuna croata.");
+			pa--;
+			}
+			if(z=='Bulgaria'){
+			alert("Es de la unión europea y su moneda es Lev.");
+			pa--;
+			}
+			if(z=='Hungria'){
+			alert("Es de la unión europea y su moneda es Forinto húngaro.");
+			pa--;
+			}
+			if(z=='Polonia'){
+			alert("Es de la unión europea y su moneda es Złoty.");
+			pa--;
+			}
+			if(z=='Republica Checa'){
+			alert("Es de la unión europea y su moneda es Corona checa ");
+			pa--;
+			}
+			if(z=='Suecia'){
+			alert("Es de la unión europea y su moneda es Corona sueca ");
+			pa--;
+			}
+			if(z=='Dinamarca'){
+			alert("Es de la unión europea y su moneda es Corona danesa ");
+			pa--;
+			}
+			if(z=='Reino Unido'){
+			alert("Es de la unión europea y su moneda es la Libra esterlina ");
+			pa--;
+			}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

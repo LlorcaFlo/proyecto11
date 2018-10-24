@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<script>
+
+  var sep="";
+  var texto = prompt("Introduzca texto: ");
+  var caracteres = "!@#$^&%*()+=-[]\/{}|:<>?,.ñ";
+
+//Recorres remplazando los caracteres
+  for (var i = 0; i < caracteres.length; i++) {
+      texto=texto.replace(new RegExp("\\" + caracteres[i], 'gi'), '');
+     }
+
+  texto=texto.toUpperCase();
+  texto = texto.replace(/á/gi,"a");
+  texto = texto.replace(/é/gi,"e");
+  texto = texto.replace(/í/gi,"i");
+  texto = texto.replace(/ó/gi,"o");
+  texto = texto.replace(/ú/gi,"u");
+  texto = texto.replace(/ñ/gi,"n");
+
+    alert(texto);
+
+
+
+
+
+
+
+// pasarH(texto);
+//
+// alert(texto);
+//
+// function pasarH(cadena) {
+//      var resultado="";
+//      for (var i = 0; i < cadena.length; i++) {
+//          resultado += cadena.charCodeAt(i).toString(16);
+//      }
+//      return resultado;
+//  }
+//
+
+
+
+
+</script>
+  </head>
+  <body>
+  </body>
+</html>
