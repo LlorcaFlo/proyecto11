@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pasar a Héxadecimal</title>
+	<!-- Realiza un programa que pida una cadena de texto, elimine todos los caracteres que no sean letras (excepto la ñ) o números, transforme las letras en mayúsculas, y de estos carateres, devuelva su código hexadecimal, (se pide implementar la función que transforme el carácter en hexadecimal sin emplear métodos directos), agrupando de dos en dos digitos, y separando los gurpos de dos dígitos con : -->
+	<script type="text/javascript">
+
+	var sep="";
+  	var texto = prompt("Introduzca texto: ");
+  	var caracteres = "!@#$^&%*()+=-[]\/{}|:<>?,.ñ";
+
+	//Recorres remplazando los caracteres
+  	for (var i = 0; i < caracteres.length; i++) {
+      texto=texto.replace(new RegExp("\\" + caracteres[i], 'gi'),'');
+     }
+
+  	texto=texto.toUpperCase();
+  	texto = texto.replace(/á/gi,"a");
+  	texto = texto.replace(/é/gi,"e");
+  	texto = texto.replace(/í/gi,"i");
+  	texto = texto.replace(/ó/gi,"o");
+  	texto = texto.replace(/ú/gi,"u");
+  	texto = texto.replace(/ñ/gi,"n");
+
+  	
+
+
+
+	
+		
+
+
+
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

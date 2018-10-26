@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<script type="text/javascript">
+
+function cambiaOrden(text){
+var sep="";
+var text = text.split(sep);
+var text1=[]
+
+for(i=text.length;i>=0;i--)
+{
+	text1.push(text[i]);
+}
+	text1=text1.toString();
+	text1=text1.replace(/,/g, "");
+ 	return(text1);
+}
+
+alert(cambiaOrden("Hola"));
+
+alert(cambiaOrden("Debieron darme sentido las pálabras que djiste despues de aquella tarde"));
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+  background-image: url(59.png), url(índice.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: 120px, 120px;
+
+}
+
+div{
+  width: 650px;
+}
+
+#uno{
+  background-color: rgb(255,0,0) ;opacity:0.8;
+  border: solid 2px yellow;
+  box-shadow: 5px 5px 5px brown;
+
+}
+
+#dos{
+  background-color: rgb(0,255,0) ;opacity:0.6;
+  border: solid 2px blue;
+}
+
+#tres{
+  background-color: rgb(0,0,255) ;opacity:0.4;
+  border: dotted 2px white;
+}
+
+#uno:hover{
+  background-color: rgb(255,125,0) ;opacity:0.6;
+}
+#dos:hover{
+  background-color: rgb(0,0,0) ;opacity:0.6;
+  color: white;
+}
+#tres:hover{
+  background-color: rgb(100,100,60) ;opacity:0.6;
+}

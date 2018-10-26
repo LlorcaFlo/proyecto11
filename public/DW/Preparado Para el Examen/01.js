@@ -5,21 +5,44 @@ Si no es un país de la Unión debe volver a pedir el nombre de un pais.(2,5 pto
 
 Los 19 estados que forman la zona del euro son:​ Alemania, Austria, Bélgica, Chipre, Eslovaquia, Eslovenia,
 España, Estonia, Finlandia, Francia, Grecia, Irlanda, Italia, Letonia, Lituania, Luxemburgo, Malta, Países Bajos y Portugal.
+'Rumania','Croacia','Bulgaria','Hungría','Polonia','República Checa','Suecia',
+'Dinamarca','Reino Unido'
 
 
-Rumania: 2022.6​
-Croacia: En torno a 2025.7​
-Bulgaria: No se plantea adoptar el euro de momento, aunque debe hacerlo. Está planteando incoporarse al MTC II.8​9​
-Hungría: No se plantea adoptar el euro de momento, aunque debe hacerlo.
-Polonia: No se plantea adoptar el euro de momento, aunque debe hacerlo.
-República Checa: No se plantea adoptar el euro de momento, aunque debe hacerlo.
-Suecia: No se plantea adoptar el euro de momento, aunque debe hacerlo.
-Dinamarca: Tiene una cláusula de exclusión.
-Reino Unido: Tiene una cláusula de exclusión.*/
-
-
+*/
 var pais = ['Alemania', 'Austria', 'Bélgica', 'Chipre', 'Eslovaquia', 'Eslovenia',
-'España', 'Estonia', 'Finlandia', 'Francia', 'Grecia', 'Irlanda', 'Italia', 'Letonia', 'Lituania', 'Luxemburgo', 'Malta', 'Países Bajos','Portugal'];
+'España', 'Estonia', 'Finlandia', 'Francia', 'Grecia', 'Irlanda', 'Italia', 'Letonia', 
+'Lituania', 'Luxemburgo', 'Malta', 'Países Bajos','Portugal'];
+
+var pais2 = ['Rumania','Croacia','Bulgaria','Hungría','Polonia','República Checa','Suecia',
+'Dinamarca','Reino Unido'];
+
+ var moneda =['Leu','Kuna','Lev','Forinto','Złoty','Corona checa','Corona sueca',
+  'Corona danesa','Libra esterlina'];
+
+  var ritmo==false;
+ do {
+
+ 	var pedir = prompt("Inserte un país que esté en la Unión Europea.");
 
 
-alert(pais);
+ 	for(var i=0;i<pais.length;i++){
+
+ 		if(pedir==pais[i]){
+ 			ritmo==true;
+ 			alert("Es un pais de la Unión Europea");
+
+
+ 			for(var j=0;j<pais2.length;j++){
+ 				if(pedir==pais2[j]) {
+
+ 					alert("pero su moneda es " + moneda[j] +".");
+
+ 				}
+ 			}
+ 		}
+ 	}
+ }while(ritmo==false;)
+
+
+

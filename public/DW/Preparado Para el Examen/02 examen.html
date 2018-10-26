@@ -5,24 +5,49 @@
     <title></title>
 <script>
 
-  var sep="";
-  var texto = prompt("Introduzca texto: ");
-  var caracteres = "!@#$^&%*()+=-[]\/{}|:<>?,.ñ";
+    var sep="";
+    var texto = prompt("Introduzca texto: ");
+    var caracteres = "!@#$^&%*()+=-[]\/{}|:<>?,.ñ";
 
-//Recorres remplazando los caracteres
-  for (var i = 0; i < caracteres.length; i++) {
-      texto=texto.replace(new RegExp("\\" + caracteres[i], 'gi'), '');
-     }
+  //Recorres remplazando los caracteres
+    for (var i = 0; i < caracteres.length; i++) {
+        texto=texto.replace(new RegExp("\\" + caracteres[i], 'gi'), '');
+        }
 
-  texto=texto.toUpperCase();
-  texto = texto.replace(/á/gi,"a");
-  texto = texto.replace(/é/gi,"e");
-  texto = texto.replace(/í/gi,"i");
-  texto = texto.replace(/ó/gi,"o");
-  texto = texto.replace(/ú/gi,"u");
-  texto = texto.replace(/ñ/gi,"n");
+    texto = texto.replace(/á/gi,"a");
+    texto = texto.replace(/é/gi,"e");
+    texto = texto.replace(/í/gi,"i");
+    texto = texto.replace(/ó/gi,"o");
+    texto = texto.replace(/ú/gi,"u");
+    texto = texto.replace(/ñ/gi,"n");
+
+    texto=texto.toUpperCase();
 
     alert(texto);
+
+    devuelveHexa("texto");
+
+    alert(texto);alert(texto);
+
+
+    var caracteres = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+    var hexadecimales = ['30','31','32','33','34','35','36','37','38','39','41','42','43','44','45','46','47','48','49','4A','4B','4C','4D','4E','4F','50','51','52','53','54','55','56','57','58','59','5A'];
+
+    function devuelveHexa(c){
+      for(i=0;i<caracteres.lenght;i++){
+        if(caracteres.include(c)){ 
+
+            texto.indexOf(c);
+            texto+=texto.join(':');
+
+            return texto;
+        }
+      }
+    }
+
+
+
 
 
 

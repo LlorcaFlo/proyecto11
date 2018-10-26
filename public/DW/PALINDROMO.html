@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<script>
+	
+function palindromo (cadena) {
+	
+	var arrayCadena = [];
+	var iguales = true;
+
+	var cadenaMinusculas = cadena.toLowerCase();
+	
+	var tilde = ['á', 'é', 'í', 'ó', 'ú'];
+	var sintilde = ['a', 'e', 'i', 'o', 'u'];	
+	
+	for (var z = 0; z < cadenaMinusculas.length; z++) {		
+		for (var j = 0; j < 5; j++) {
+			if (cadenaMinusculas.charAt(z) == tilde[j]) {				
+				var cadenaSintildes = cadenaMinusculas.replace (cadenaMinusculas.charAt(z), sintilde[j]);
+				cadenaMinusculas = cadenaSintildes;				
+			}
+		}
+	}
+
+	for (var z = 0; z < cadenaMinusculas.length; z++) {
+		
+		if (cadenaMinusculas.charAt(z) == " ") continue;
+			arrayCadena.push(cadenaMinusculas.charAt(z));
+		}
+
+	var arrayComparar = arrayCadena.slice().reverse();	
+	
+	for (z in arrayCadena) {
+		if (arrayCadena[z] != arrayComparar[z]) {
+			iguales = false;
+			break;
+		}
+	}
+	
+	iguales ? document.write("Es un palindromo") : document.write("No es un palindromo");
+}
+
+palindromo ("La ruta nos aportó otro paso natural");
+
+
+
+</script>
+
+
+</head>
+
+<body>
+</body>
+</html>

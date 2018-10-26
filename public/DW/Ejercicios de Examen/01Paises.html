@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+
+	var pais = ['Alemania', 'Austria', 'Bélgica', 'Chipre', 'Eslovaquia', 'Eslovenia',
+	'España', 'Estonia', 'Finlandia', 'Francia', 'Grecia', 'Irlanda', 'Italia', 'Letonia',
+	'Lituania', 'Luxemburgo', 'Malta', 'Países Bajos','Portugal'];
+
+	var pais1 = ['Rumania','Croacia','Bulgaria','Hungría',
+	'Polonia','República Checa','Suecia','Dinamarca','Reino Unido'];
+
+	var moneda = ['Leu','Kuna','Lev','Forinto','Złoty','Corona checa','Corona sueca',
+  	'Corona danesa','Libra esterlina'];
+
+var pa=1;
+while(pa>0){
+var z = prompt("Escriba un país de la Unión Europea: ");
+
+		if (pais.includes(z)){
+			alert(z + "tiene como moneda el €uro.");
+			pa=0;
+		}
+		if(pais1.includes(z)){
+			mon=pais1.indexOf(z);
+		alert(z + " es de la unión europea, pero su moneda es el/la " + moneda[mon] + ".")
+			pa=0;
+			}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
