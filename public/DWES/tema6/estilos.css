@@ -1,20 +1,12 @@
 body{
-  background-image: linear-gradient(to right, #43C6AC , #191654);
-  font-family: "Times New Roman";
-  color:silver;
-
+     font-family: sans-serif;
 }
-
-h1{
-  text-align: center;
-}
-
 .errorf{
     color: red;
     font-size: 80%;
 }
 form p{
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0; 
     font-size: 1.2em;
     line-height: 25px;
 }

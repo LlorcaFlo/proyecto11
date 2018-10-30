@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+            width: 200px;
+        }
+        #t1{
+            float: left;
+            margin-right: 30px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Casos prácticos</h2>
+
+    <table border="1px" id="t1">
+        <caption>Ingresos</caption>
+        <tr>
+            <td colspan="2">2012</td>
+        </tr>
+        <tr>
+            <td colspan="2">Enero</td>
+        </tr>
+        <tr>
+            <td>100$</td>
+            <td>50$</td>
+        </tr>
+        <tr>
+            <td>Febrero</td>
+            <td>75$</td>
+        </tr>
+
+    </table>
+
+    <table border="1px">
+        <caption>Ingresos</caption>
+        <tr>
+            <td colspan="3">2012</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Enero</td>
+            <td>1</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>50$</td>
+        </tr>
+        <tr>
+            <td colspan="2">Febrero</td>
+            <td>75$</td>
+        </tr>
+    </table>
+
+</body>
+</html>

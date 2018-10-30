@@ -3,37 +3,59 @@ body{
   background-position: left bottom;
   background-repeat: no-repeat, repeat;
   background-size: 120px, 120px;
-
 }
-
 div{
-  width: 650px;
+  width: 300px;
 }
-
+#corte{
+    word-break:break-word;
+}
 #uno{
   background-color: rgb(255,0,0) ;opacity:0.8;
   border: solid 2px yellow;
   box-shadow: 5px 5px 5px brown;
-
 }
-
 #dos{
   background-color: rgb(0,255,0) ;opacity:0.6;
   border: solid 2px blue;
 }
-
 #tres{
   background-color: rgb(0,0,255) ;opacity:0.4;
   border: dotted 2px white;
+  box-shadow: 2px 2px 2px  yellow;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
 }
-
+#cuatro{
+  background-color: grey;
+}
 #uno:hover{
   background-color: rgb(255,125,0) ;opacity:0.6;
+  box-shadow: 5px 5px 5px purple;
 }
 #dos:hover{
   background-color: rgb(0,0,0) ;opacity:0.6;
   color: white;
+  box-shadow: 5px 5px 5px green;
+
 }
 #tres:hover{
   background-color: rgb(100,100,60) ;opacity:0.6;
+  box-shadow: 5px 5px 5px orange;
+  overflow:visible;
+  white-space: initial;
+cursor: pointer;
+
+}
+a{
+  color:red;
+}
+a:hover{
+  color:white;
+}
+a:visited{
+  color:silver;
+}
+li{
 }

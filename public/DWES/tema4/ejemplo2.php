@@ -1,9 +1,9 @@
 <?php
 
-$array= [3,4,'Pepe'];
+$array = [3, 4, 'Pepe'];
 
-if($array) {
-	echo 'El array contiene datos';
-}else{
-	echo 'El arary está vacío';
+if ($array) {
+	echo 'El array tiene datos';
+} else {
+	echo 'El array está vacío';
 }
