@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caracter</title>
+    <script type="text/javascript">
+
+	function code() {
+		var evento = event;
+		var todo= " unicode: " + evento.charCode + "\n " + evento.keyCode + "\n
+     tecla pulsada: " + String.fromCharCode(evento.charCode)+"\n tipo de evento:"+evento.type;
+		console.log(todo);
+
+  	}
+
+  	function asignarEventos(){
+  		document.body.addEventListener('keypress',code);
+ 	}
+
+	document.addEventListener('DOMContentLoaded',asignarEventos);
+  </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

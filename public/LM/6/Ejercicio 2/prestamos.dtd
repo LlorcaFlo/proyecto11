@@ -1,0 +1,17 @@
+<!ELEMENT prestamo (cabezera, cuerpo, pie)>
+<!ELEMENT cabezera (titulo, ficha)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT ficha (#PCDATA)>
+<!ELEMENT cuerpo (datos_del_lector, datos_del_libro)>
+<!ELEMENT datos_del_lector (nombre, apellidos, domicilio, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT datos_del_libro (autor, titulo, clasificacion)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT clasificacion (#PCDATA)>
+<!ELEMENT pie (fecha, entrega, firma_de_recibo)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT entrega (#PCDATA)>
+<!ELEMENT firma_de_recibo (#PCDATA)>

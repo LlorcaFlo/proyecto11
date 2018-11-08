@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+  <pedido id="1">
+    <articulo codigo="A2023">
+    </articulo>
+    <cliente>
+      <nombre>Juan Delgado Martínez</nombre>
+      <direccion>
+        <calle>Barco</calle>
+        <numero>4</numero>
+        <piso>tercero</piso>
+        <letra>A</letra>
+      </direccion>
+    </cliente>
+    <fecha>19-5-2000</fecha>
+  </pedido>
+</pedidos>

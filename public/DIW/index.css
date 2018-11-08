@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+div{
+	font-family: 'Poor Story', cursive;
+	margin: auto;
+	width: 200px;
+}
+ol{
+	list-style-type: none;
+}
+.uno{
+	text-align: center;
+	background-color: blue;
+	color:white; 
+	border: 2px solid blue;
+}
+.dos{
+	font-size: 18px;
+	text-align: center;
+	background-color: black;
+	color:blue;
+}
+a{
+	color:white;
+}
