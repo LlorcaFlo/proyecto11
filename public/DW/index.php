@@ -4,7 +4,9 @@
 <ol>
 	<li><a href="EjerciciosExamen/EjerciciosJavasScript.html">Ejercicios Examen</a></li>
 </ol>
-
+<ol>
+	<li><a href="PracticasTema3/index.html">Ejercicios Examen</a></li>
+</ol>
 
 
 

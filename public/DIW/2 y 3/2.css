@@ -1,0 +1,111 @@
+
+body{
+    background-image:url("Capa.jpg");
+    background-attachment: fixed;
+
+}
+div{
+  border: dotted;
+  padding: 10px;
+  border-radius: 25%;
+  border-top: solid green 10px;
+  border-left: solid  red 10px;
+  border-right: solid  yellow 10px;
+  border-bottom: solid  blue 10px;
+
+
+}
+/*NOMBRE*/
+#uno{
+  background: yellow;
+  color: red;
+  border-style: dotted;
+  border-radius: 25px;
+  text-align:center;
+}
+/*HSL*/
+#dos{
+  background: hsl(120,25%,70%);
+  color: black;
+  border-style: dotted;
+  border-radius: 25px;
+  text-align:center;
+}
+/*HSLA*/
+#tres{
+  background: hsla(175,25%,70%,0.2);
+  color: white;
+  border-style: dotted;
+  border-color: hsla(120,45%,20%,0.7);
+  border-radius: 25px;
+  text-align:center;
+}
+/*RGBA*/
+#cuatro{
+  background: rgba(230,22,25,0.4);
+  color: gold;
+  border-style: dotted;
+  border-color: hsl(120,45%,20%);
+  border-radius: 25px;
+  text-align:center;
+}
+/*Hexadecimal*/
+#cinco{
+  background: #00ff00;
+  color: yellow;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 25px;
+  text-align:center;
+}
+/*RGB*/
+#seis{
+  background: rgb(134,156,89);
+  color: yellow;
+  border-style: solid;
+  border-color: green;
+  border-radius: 25px;
+  text-align:center;
+}
+#siete{
+  color: yellow;
+  border-style: solid;
+  border-color: rgba(35,35,100,0.5);
+  border-radius: 45px;
+  text-align:center;
+}
+#ocho{
+  background: rgb(255,0,0);
+  color: white;
+  border: white 20px;
+  border-style: double;
+  border-top: dotted white 3px;
+  border-bottom: dotted white 3px;
+  border-radius: 25px;
+  text-align:center;
+}
+#nueve{
+  color:gold;
+  border:2px solid gold;
+  border-radius:35%;
+  font-size:25px;
+  text-align:center;
+  border-left: solid 20px white;
+  border-right: solid 20px white;
+  border-bottom: dotted white;
+}
+#diez{
+
+  background: rgb(170,120,170);
+  color:black;
+  border:2px solid gold;
+  border-radius:35%;
+  font-size:25px;
+  text-align:center;
+  border-top: solid blue 100px;
+  border-left: solid  yellow 150px;
+  border-right: solid  red 150px;
+  border-bottom: solid green 100px;
+}
+
+}

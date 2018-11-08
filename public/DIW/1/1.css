@@ -1,0 +1,33 @@
+/*
+Todas las etiquetas que sean <p></p> "parrafos" se centraran y se le asignara el color azul.
+*/
+p{
+	color:blue;
+	text-align:center;
+}
+/*
+Accede a la identificación rojo para dar color rojo a todos las etiquetas que la contengan.
+*/
+#rojo {
+	color:red;
+	text-align:center;
+}
+ /*
+ Accede a la clase blue para dar color azul a todos las etiquetas que la contengan.
+ */
+
+ .blue {
+	 color:blue;
+ }
+
+/*
+Accede a la clase center para centrar todos las etiquetas que la contengan.
+*/
+.center{
+		text-align:center;
+}
+
+/*
+5. Añade comentarios explicativos a tu documento CSS
+que explique qué hace cada sentencia.
+*/

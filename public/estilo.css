@@ -10,6 +10,7 @@ div {
 a, h1, h3, li {
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 2px rgb(175, 175, 175);
+	text-align: center;
 }
 
 form{
