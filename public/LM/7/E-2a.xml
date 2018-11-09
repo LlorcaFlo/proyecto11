@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Cd titulo="Título del cd">
+  <Songs>
+    <Song length="6:20" anio="1978">
+      <title>HotCop</title>
+      <composers>
+        <composer>
+          <nombre>Henry</nombre>
+         <apellidos>Beolo</apellidos>
+       </composer>
+      </composers>
+      <producers>
+        <producer>
+          <nombre>Jacques</nombre>
+          <apellidos>Morali</apellidos>
+        </producer>
+      </producers>
+      <publisher>PolyGram</publisher>
+      <artists>
+        <artist>Village People</artist>
+      </artists>
+    </Song>
+  </Songs>
+  <Fecha dia="25" mes="Octubre" anio="1985">
+  </Fecha>
+</Cd>

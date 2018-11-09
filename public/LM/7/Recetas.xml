@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Recetas>
+  <receta>
+    <nombre>Besugo al horno</nombre>
+    <informaciongeneral>
+        <comensales>4</comensales>
+        <tiempo unidad="m">45</tiempo>
+        <dificultad>"Muy Facil"</dificultad>
+    </informaciongeneral>
+        
+    <ingredientes>
+      <ingrediente cantidad="1"/>Besugo
+      <ingrediente cantidad="1"/>Besugo
+      <ingrediente canitidad="1" unidad="Cucaharada"/>Pan rallado
+      <ingrediente canitidad="2" unidad="Dientes"/>Ajo
+      <ingrediente canitidad="1/2" unidad="dl"/>Vino Blanco
+      <ingrediente/>Aceite
+      <ingrediente/>Perejil
+      <ingrediente/>Sal
+    </ingredientes>
+    <preparacion>
+      <paso num="1"/>Limpiar Pescado
+      <paso num="2"/>Ponerlo en el fuego...
+      <paso num="3"/>Pelar y picar los ajos...
+      <paso num="4"/>Cubrir el pescado...
+      <paso num="5"/>Meter en el horno...
+    </preparacion>
+  </receta>
+</Recetas>

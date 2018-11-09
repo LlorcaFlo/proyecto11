@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Cd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Songs"/>
+        <xs:element ref="Fecha"/>
+      </xs:sequence>
+      <xs:attribute name="titulo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Songs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Song"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Song">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element ref="composers"/>
+        <xs:element ref="producers"/>
+        <xs:element name="publisher" type="xs:string"/>
+        <xs:element ref="artists"/>
+      </xs:sequence>
+      <xs:attribute name="anio" type="xs:string" use="required"/>
+      <xs:attribute name="length" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="composers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="composer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="composer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="producer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="artists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="artist" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Fecha">
+    <xs:complexType>
+      <xs:attribute name="anio" type="xs:string" use="required"/>
+      <xs:attribute name="dia" type="xs:string" use="required"/>
+      <xs:attribute name="mes" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿{
+   "Cd": {
+      "Songs": {
+         "Song": {
+            "title": "HotCop",
+            "composers": {
+               "composer": {
+                  "nombre": "Henry",
+                  "apellidos": "Beolo"
+               }
+            },
+            "producers": {
+               "producer": {
+                  "nombre": "Jacques",
+                  "apellidos": "Morali"
+               }
+            },
+            "publisher": "PolyGram",
+            "artists": {
+               "artist": "Village People"
+            },
+            "_length": "6:20",
+            "_anio": "1978"
+         }
+      },
+      "Fecha": {
+         "_dia": "25",
+         "_mes": "Octubre",
+         "_anio": "1985"
+      },
+      "_titulo": "Título del cd"
+   }
+}
