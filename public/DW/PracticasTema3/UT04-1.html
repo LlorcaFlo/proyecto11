@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- 1. Crea una web donde se indique por consola al presionar una tecla el carácter
+  correspondiente, su código unicode, el código de la tecla y el tipo de evento.
+  Emplea el modelo del DOM Level 2. (2 ptos) -->
   <meta charset="UTF-8">
   <title>Caracter</title>
     <script type="text/javascript">
@@ -12,17 +15,15 @@
 		console.log(todo);
 
   	}
-
   	function asignarEventos(){
-  		document.body.addEventListener('keypress',code);
+  		document.body.addEventListener('onkeypress',code);
  	}
 
 	document.addEventListener('DOMContentLoaded',asignarEventos);
+
   </script>
 </head>
 <body>
-
-
 
 </body>
 </html>

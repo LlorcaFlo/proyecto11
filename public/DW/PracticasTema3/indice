@@ -1,0 +1,20 @@
+UT04-PC01
+EJERCICIOS EVENTOS
+1. Crea una web donde se indique por consola al presionar una tecla el carácter
+correspondiente, su código unicode, el código de la tecla y el tipo de evento. Emplea el
+modelo del DOM Level 2. (2 ptos)
+
+
+2. Crea una web donde se muestre tres botones dentro de un párrafo, empleando el modelo de
+eventos del DOM Level 2, muestra en consola como se va propagando el flujo del evento
+jerarquicamente. El primer botón propagará el evento según el modelo Event bubbling y el
+segundo botón según el modelo Event capturing. El tercer botón empleará el modelo Event
+bubbling pero debe interrumpirse la propagación cuando el evento sea capturado por el
+párrafo. (3 pto)
+3. Crea una web donde en cuatro campos de texto se muestre las coordendas del ratón con
+respecto a la página y a la pantalla, y en otros dos campos de texto se muestren las
+coordenadas al hacer click. Emplea el modelo del DOM Level 2. (2 ptos)
+4. Crea una web donde en un formulario tegnamos dos listas desplegables, en la primera se
+podrán seleccionar tres equipos, R. Madrid, Atlético de Madrid y Valencia F.C., y en la
+segúnda según el equipo selecciónado se permitirá seleccionar a uno de sus jugadores.
+Emplea el modelo del DOM Level 2. (3 ptos)
