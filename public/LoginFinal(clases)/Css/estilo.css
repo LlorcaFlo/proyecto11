@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+body{
+background-image: linear-gradient(to left, rgba(85,85,85,0.5), rgba(128,128,182,0.5));
+font-family: 'Allerta Stencil', sans-serif;
+font-weight: bold;
+
+}
+div {
+	box-shadow: inset -2px -2px 2px black, inset 2px 2px 2px black;
+	background:rgba(120,120,175,0.5);
+	font-family: 'Poor Story', cursive;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 auto;
+	}
+.dos{
+	margin-left: 0;
+	border-radius: 50%;
+}
+	p,h5,label{
+		color:white;
+		margin: auto;
+		text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+		font-size: 18px;
+	}
+a,h1,h2,h3,h4,h6{
+	color: rgb(255, 255, 255);
+	text-shadow: 3px 4px 4px rgb(175, 175, 175);
+	font-weight: bold;
+}
+a:hover{
+	color: rgba(255, 0, 0, 0.7);
+
+}
+.errorf{
+    color: rgba(15,195,255,0.8);
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+    font-size: 80%;
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}
+.btn{
+	background-color:rgba(60,80,175,0.8);
+	border-color:rgba(120,120,175,0.5);
+	color: white;
+}
+.btn:hover{
+	background:rgba(120,120,175,0.5);
+	border-color:rgba(60,80,175,0.8);
+	color: black;
+	
+}
