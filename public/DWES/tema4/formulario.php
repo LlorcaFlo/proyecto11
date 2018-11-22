@@ -1,4 +1,4 @@
-<form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
+<form action="<?= $_SERVER['PHP_SHELF'] ?>" method="POST">
 	<p>
 		<label for="nombre">Nombre</label>
 		<input type="text" name="nombre" value="">
@@ -12,8 +12,8 @@
 		<input type="password" name="clave[original]">
 	</p>
 	<p>
-		<label for="clave2">Repetir clave</label>
-		<input type="password" name="clave[repetida]">
+		<label for="clave2">Repetir Clave</label>
+		<input type="password" name="clave[reopetida]">
 	</p>
 	<p>
 		<label for="intereses">Intereses</label>
@@ -21,7 +21,8 @@
 			<option value="nadar">Nadar</option>
 			<option value="correr">Correr</option>
 			<option value="reir">Reir</option>
-			<option value="llorar">Llorar</option>
+			<option value="Llorar">Llorar</option>
+			<option value="Jugar">Jugar</option>
 		</select>
 	</p>
 	<p>

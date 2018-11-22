@@ -1,22 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+body{
+background-image: linear-gradient(to left, rgba(85,85,85,0.5), rgba(128,128,182,0.5));
+font-family: 'Poor Story', cursive;
+font-weight: bold;
 
-
+}
 div {
+	box-shadow: -2px -2px 2px white, 2px 2px 2px white;
 	background-image: linear-gradient(to right, rgb(40, 40, 40),rgb(0, 0, 0));
-	font-family: ;
+	font-family: 'Poor Story', cursive;
+	font-weight: bold;
 	color: white;
 	text-align: center;
 	border-radius: 5px;
-}
-a, h1, h3, li {
-	color: rgb(255, 255, 255);
-	text-shadow: 2px 2px 2px rgb(175, 175, 175);
-	text-align: center;
-}
-
-form{
-	border-radius: 5px;
-	background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(40, 40, 40));
 	margin: 0 auto;
-	width: 300px;
-	border-color: rgb(175, 175, 175);
+	width: auto;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.dos{
+	margin-left: 0;
+	border-radius: 50%;
+}
+p,h5{
+	
+text-shadow: 3px 4px 4px rgb(175, 175, 175);
+font-size: 14px;
+}
+a,h1,h2,h3,h4,h6{
+	color: rgb(255, 255, 255);
+	text-shadow: 3px 4px 4px rgb(175, 175, 175);
+	font-weight: bold;
+}
+.inicio{
+	margin: auto;
+	width: 200px;
+	text-align: center;
+	border-radius:2px;
+	border: 1px dotted grey;
+}
+a:hover{
+	color: rgba(255, 0, 0, 0.7);
+}
+.errorf{
+    color: red;
+    font-size: 90%;
+
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}
+.btn{
+	background-color: grey;
+	border-color: red;
+	color: white;
+}
+.btn:hover{
+	color: rgba(255, 0, 0, 0.7);
+	
 }

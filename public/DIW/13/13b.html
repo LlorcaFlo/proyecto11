@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+			div{
+				position: relative;
+				background:linear-gradient(blue,yellow);
+				width: 300px;
+				height: 300px;
+				animation-name:ejemplo; 
+				animation-duration:4s;
+				animation-iteration-count:infinite;
+				animation-direction: alternate;
+				box-shadow:;
+				border:;
+			}
+			@keyframes ejemplo{
+				25%{background:linear-gradient(blue,yellow);
+					box-shadow: 0 0 20px;
+					border: 4px solid black;
+					left: 0%;
+				}
+
+				50%{background:linear-gradient(green, blue);
+					box-shadow: 0 0 15px;
+					border: 3px dotted black;
+					left: 25%;
+				}
+
+				75%{background:linear-gradient(red,green);
+					box-shadow: 0 0 10px;
+					border: 2px groove black;
+					left: 50%;
+				}
+
+				100%{background:linear-gradient(yellow, red);
+					box-shadow: 0 0 5px;
+					border: 1px double black;
+					left: 70%;
+				}
+			}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

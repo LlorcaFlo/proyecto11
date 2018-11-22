@@ -1,0 +1,78 @@
+	body{
+			font-size: 30px;
+		}
+	p 	{
+		margin: auto;
+		color:black;
+		padding-top: 15px;
+		}
+	.uno{
+			background-color: red;
+			text-align: center;
+			height: 140px;
+
+		}
+
+	.dos{
+			background-color: blue;
+			color:black;
+			float:left;
+			text-align: center;
+			padding:25px;
+			width: 200px;
+			height: 400px;
+		}
+	.tres{
+			background-color: green;
+			color:black;
+			float:right;
+			text-align: center;
+			padding:25px;
+			width: 200px;
+			height: 400px;
+	}
+	.cuatro{
+		background-color: purple;
+			color:black;
+			float:left;
+			text-align: center;
+			padding:25px;
+			width: 777px;
+			height: 400px;
+	}
+	.cinco{
+			background-color: yellow;
+			color:black;
+			text-align: center;
+			padding:25px;
+			clear:left;
+		}
+
+	ul {
+			list-style-type: none;
+			padding-top:2px;
+		}
+
+	
+	.btn{
+			float:left;
+			background-color: grey;
+			color:white;
+			border-color: black;
+			width: 100px;
+			height: 50px;
+			box-shadow: 2px 2px 4px black, -2px -2px 4px black, inset 2px -2px 2px black, inset -2px 2px 2px black;
+			margin: 4px;
+		}
+		
+		.btn:hover{
+
+		background-color: blue;
+		}
+		.btn1{
+			background-color: blue;
+		}
+		.btn1:hover{
+		background-color: grey;
+
+		}

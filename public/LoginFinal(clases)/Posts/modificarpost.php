@@ -1,12 +1,14 @@
-<meta charset="utf-8"> 
-<link rel="stylesheet" href="../Css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../Css/estilo.css">
-<?php
+<?php 
 session_start ();
 
     if (! isset($_SESSION['user']['id'])) {
             header('location:../Pagina/perfilrestringido.php');
- }
+ } ?>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="../Css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../Css/estilo.css">
+<?php
+
     spl_autoload_register ( function ( $class ) {
         include '../Clases/' . $class . '.php';
             });

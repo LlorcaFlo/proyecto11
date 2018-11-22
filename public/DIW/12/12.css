@@ -1,0 +1,66 @@
+	body {
+		background:linear-gradient(to right, black, grey);
+	}
+	
+	div{
+	width: 100px;
+	height: 100px;
+	float:left;
+			}
+
+	.div1 {
+		background:linear-gradient(red,blue);	
+	}
+	.div2 {
+        background: linear-gradient(to right, red,blue);
+    }
+	.div3 {
+        background: linear-gradient(to bottom right, red,blue);
+    }
+    .div4 {
+        background: linear-gradient(to bottom right, red,green, teal, orange,blue);
+    }
+    .div5{
+        background: linear-gradient(to bottom right, rgba(255,0,0,0),blue);
+	}
+	.div6{
+        background-image: repeating-linear-gradient(blue, red 10%, green 20%);
+        float:left;
+  	}
+    .div7{
+        background-image: radial-gradient(blue, red 10%, green 25%);
+    }
+    .div8{
+        background-image: radial-gradient(farthest-corner at 65% 65%, blue, yellow);
+    }
+    .div9{
+        background-image: repeating-radial-gradient(blue, yellow 10%, red 15%);
+    }
+    .div1:hover {
+		background:linear-gradient(grey,blue);
+	}
+	.div2:hover {
+        background: linear-gradient(to left, red,blue);
+    }
+    .div3:hover {
+        background: linear-gradient(to bottom left, red,blue);
+    }
+    .div4:hover {
+        background: linear-gradient(to bottom right, purple,pink,yellow, teal, red,blue,orange);
+    }
+    .div5:hover {
+        background: linear-gradient(to bottom right, yellow,rgba(0,255,0,0.5));
+	}
+	.div6:hover{
+        background-image: repeating-linear-gradient(blue, red 30%, green 30%);
+  	}
+    .div7:hover{
+        background-image: radial-gradient(red 90%, green);
+    }
+    .div8:hover{
+        background-image: radial-gradient(farthest-corner at 20%, blue, yellow);
+    }
+    .div9:hover{
+        background-image: repeating-radial-gradient(blue, yellow 40%, red 45%);
+    }
+

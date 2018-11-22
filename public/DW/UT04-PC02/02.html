@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario Java Script</title>
+Al presiona el botón se enviará el formulario si se cumplen las siguientes validaciones:
+
+En el campo nombre se ha introducido un nombre, y en el campo apellidos dos apellidos, se comprobarán que tanto nombre y apellidos están comuestos por letras y que empiezan por mayúsculas, en caso de nombres o apellidos comuestos se separarán por – y no se permitirán mas de 25 caracteres en el campo nombre y 50 en el campo apellidos. (2 ptos)
+Se ha seleccionado un radiobutton. (1 pto)
+Si se ha seleccionado el radiobutton que indica que el usuario es murcianom la lista será visible y se debe seleccionar una población. 
+
+</head>
+<body>
+	<meta charset="utf-8">
+
+	<form>
+		<br>
+		<label for="nombre">Nombre</label>
+		<input type="text" name="nombre" id="nombre"><br>
+
+		<label for="apellidos">Apellidos</label>
+		<input type="text" name="apellidos" id="apellidos"><br>
+
+		<p>Eres de Murcia?...</p>
+		<input type="radio" name="murcia" value="Si" checked>Si<br>
+		<input type="radio" name="murcia" value="No">No<br>
+
+		<p>Si eres de murcia...de que ciudad eres?</p>
+		<select name="ciudades">
+			<option value="aguilas">Aguilas</option>
+			<option value="cartagena">Cartagena</option>
+			<option value="caravaca">Caravaca</option>
+			<option value="fortuna">Fortuna</option>
+			<option value="jumilla">Jumilla</option>
+			<option value="murica">Murcia</option>
+			<option value="yecla">Yecla</option><br>		
+		</select><br>
+
+		<br>
+		<input type="submit" name="enviar" value="Enviar">
+	</form>
+
+</body>
+</html>

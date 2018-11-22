@@ -16,7 +16,7 @@ spl_autoload_register ( function ( $class ) {
         if($nick != "" && $email != ""){
             $val->errores['nick'] = 'Debes intrducir solo una de las dos opciones.<br>';
         }
-
+    
         if(!isset($_POST['nick']) OR empty($nick)){
 
             if ($email){
@@ -34,7 +34,7 @@ spl_autoload_register ( function ( $class ) {
         }
 
         if (!isset ($_POST['clavelog']) || empty($clavelog)) {
-                    $val->errores['clavelog'] = 'No has introducido la contraseña.<br>';
+                    $val->errores['clavelog'] = 'No has introducido la contraseña.<br>';  
         }
 
         if ($nick == ""){
@@ -86,16 +86,16 @@ spl_autoload_register ( function ( $class ) {
             else{
 
             session_start();
-
+ 
             while ($i = $prepare->fetch(PDO::FETCH_OBJ)) {
 
                     $_SESSION['user']['id'] = $i->id;
                     $_SESSION['user']['nick'] = $i->nick;
                     $_SESSION['user']['nombre'] = $i->nombre;
                     $_SESSION['user']['email'] = $i->email;
-
+                
             $prepare->closeCursor();
-
+            
             header('location:../Pagina/perfil.php');
              }
 }

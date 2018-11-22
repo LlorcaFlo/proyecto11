@@ -1,23 +1,19 @@
+<?php
+
+if(! isset($_POST['pulsar'])){
+   session_start(); 
+}
+if(! isset($_SESSION['user']['id'])){
+            header('location:../Pagina/perfilrestringido.php');
+            }
+spl_autoload_register (function ($class) {
+                include '../Clases/' . $class . '.php';
+            });
+ ?>
 <meta charset="utf-8">
 <title>Crea Post</title>
  <link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css">
  <link rel="stylesheet" type="text/css" href="../Css/estilo.css">
-<?php
-
-  spl_autoload_register (function ($class) {
-
-                include '../Clases/' . $class . '.php';
-            });
-
-if ( ! isset ($_POST['pulsar'])){
-    session_start();
-}
-
-if (! isset($_SESSION['user']['id'])) {
-    header('location:../Pagina/perfilrestringido.php');
-}
-
- ?>
 
 <form action="valida_post.php" method="POST">
     <div class="col-4">
@@ -26,6 +22,7 @@ if (! isset($_SESSION['user']['id'])) {
             <?php echo "<spam style=\"color: rgba(15,195,255,0.8);\">" . $_SESSION['user']['nick'] . "</spam>"; ?>
             </p>
         <br>
+        
     <label for="titulo">Titulo</label>
     <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo"
             <?php if (isset ($_POST['pulsar'])) {
@@ -70,5 +67,3 @@ if (! isset($_SESSION['user']['id'])) {
              <a class="btn" href="../Pagina/perfil.php">Perfil</a> 
             <br><br>
         </div>           
-
-

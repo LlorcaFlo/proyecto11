@@ -3,20 +3,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Página de Autenticación</title>
+	<meta charset="utf-8">
+	<title>Página de autenticación.</title>
 </head>
 <body>
-	
-	<h1>Ya estás logueado</h1>
 
-	<?php $_SESSION['user']['name'] = 'Carlos' ?>
 
-	<h2>Con el nombre: <?= $_SESSION['user']['name'] ?></h2>
+	<h1>
+		Ya estás logueado
+	</h1>
 
-	<a href="inicio.php">Regresan a la página principal</a>
-	<br>
-	<a href="logout.php">Cerrar Sesión</a>
+	<?php $_SESSION['user']['name'] = 'José' ?>
+
+	<h2>Con el nombre: <?php $_SESSION ?> </h2>
+
+
+	<a href="inicio.php"></a>Regresar a la ṕágina principal<br>
+	<a href="logout.php"></a>Cerrar sesión<br>
+
+
 
 </body>
 </html>

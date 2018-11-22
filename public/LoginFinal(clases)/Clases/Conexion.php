@@ -2,11 +2,11 @@
 	class Conexion
 	{
 		// Datos de la conexion
-		private $host = 'mysql';
-		private $user = 'llorca';
-		private $pass = '23037777ff';
+		private $host = 'localhost';
+		private $user = 'root';
+		private $pass = '';
 		private $dbname = 'examen';
-
+		
 		// Contendrá el error en caso de que haya
 		public $errors = false;
 		// La conexión con la BD
@@ -112,7 +112,7 @@
 			if ( ! empty($params) ) {
 				$fields = '';
 				foreach ($params as $key => $value) {
-					$fields .= $key . ' = :' . $key . ',';
+					$fields .= $key . ' = :' . $key . ','; 
 				}
 				$fields = rtrim($fields, ',');
 				$key = key($where);
@@ -125,7 +125,7 @@
 				throw new Exception('Los parámetros están vacíos');
 			}
 		}
-		public function delete($param)
+		public function delete($param) 
 		{
 			if ( ! empty($param) ) {
 				$key = key($param);
@@ -137,7 +137,7 @@
 				throw new Exception('Los parámetros están vacíos');
 			}
 		}
-		public function getID ( $id )
+		public function getID ( $id ) 
 		{
 			$prepare = $this->db->prepare("SELECT * FROM $this->table WHERE id = $id");
 			$prepare->execute();

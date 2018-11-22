@@ -6,6 +6,7 @@ Utilizar para ello una función que admita dos parámetros I y J e indique si I 
 function para($I, $J){
   if ($I % $J == 0){
     echo "Son multiplos";
+
   } else {
     echo "No son multiplos";
   }

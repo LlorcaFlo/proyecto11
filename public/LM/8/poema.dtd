@@ -1,0 +1,16 @@
+<!ELEMENT Poemas (poema)>
+<!ELEMENT poema (titulo, autor, estilo, movimiento, estrofas)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ATTLIST autor
+          fecha_muerte CDATA #REQUIRED
+          fecha_nacimiento CDATA #REQUIRED>
+<!ELEMENT estilo (#PCDATA)>
+<!ELEMENT movimiento (#PCDATA)>
+<!ELEMENT estrofas (estrofa)>
+<!ELEMENT estrofa (linea+)>
+<!ATTLIST estrofa
+          numero CDATA #REQUIRED>
+<!ELEMENT linea (#PCDATA)>
+<!ATTLIST linea
+          numero CDATA #REQUIRED>

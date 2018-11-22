@@ -21,8 +21,6 @@ function HoraSeg($HoraIn){
 				echo 'Los minutos introducidos son: ' .$Min .'<br>';
 				echo 'Los segundos introducidos son: ' .$Seg .'<br>';
 
-
-
 			$Horase=($Hor*59*59);
 			$Minse=($Min*59);
 			

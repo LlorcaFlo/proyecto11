@@ -3,8 +3,6 @@
 $Numbers=1234;
 echo strrev($Numbers)  . '<br>';
 
-
-
 $Numbers1 = '[1,2,3,4]';
 
 function desorden($Numbers1){

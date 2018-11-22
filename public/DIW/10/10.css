@@ -1,0 +1,101 @@
+
+body{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  overflow: hidden;
+}
+#uno{
+  transition: transform 1s;
+  position: absolute;
+  text-align: center;
+  background-color: rgb(147, 102, 15);
+  border: 3px solid rgb(120, 110, 20);
+  left: 30%;
+  overflow: hidden;
+  width: 40%;
+  height: 5%;
+  padding: 5px;
+}
+#dos{
+  transition: transform 2s;
+  position: absolute;
+  text-align: left;
+  background-color: rgb(255, 253, 1);
+  border: 3px solid rgb(213, 227, 99);
+  left: 27%;
+  overflow: hidden;
+  width: 15%;
+  height: 14%;
+  padding: 5px;
+  top: 25%;
+}
+#tres{
+  transition: transform 3s;
+  position: absolute;
+  text-align: right;
+  background-color: rgb(1, 240, 255);
+  border: 3px solid rgb(0, 121, 166);
+  left: 56%;
+  overflow: hidden;
+  width: 15%;
+  height: 14%;
+  padding: 5px;
+  top: 25%;
+  z-index: 1;
+}
+#cuatro{
+  transition: transform 4s;
+  position: absolute;
+  text-align: left;
+  background-color: rgb(233, 187, 245);
+  border: 3px solid rgb(185, 13, 255);
+  left: 27%;
+  overflow: hidden;
+  width: 15%;
+  height: 14%;
+  padding: 5px;
+  top: 45%;
+}
+#cinco{
+  transition: transform 5s;
+  position: absolute;
+  text-align: right;
+  background-color: rgb(223, 142, 171);
+  border: 3px solid rgb(170, 7, 104);
+  left: 56%;
+  overflow: hidden;
+  width: 15%;
+  height: 14%;
+  padding: 5px;
+  top: 45%;
+}
+#seis{
+  position: absolute;
+  text-align: right;
+  background-color: rgb(1, 255, 49);
+  border: 3px solid rgb(0, 166, 71);
+  left: 42%;
+  overflow: hidden;
+  width: 15%;
+  height: 14%;
+  padding: 5px;
+  top:33.5%;
+}
+
+#uno:hover{
+  transform: rotate(180deg);
+}
+#dos:hover{
+  transform :translate(100px, 20px);
+}
+#tres:hover{
+  transform:skewX(30deg);
+}
+#cuatro:hover{
+  transform: scale(2,2);
+}
+#cinco:hover{
+  transform: matrix(2,5,5,2,6,6);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <style type="text/css">
+    	.btn{
+    		background-color: grey;
+    		border: solid 2px black;
+    		border-radius: 30%;
+    	}
+    	.btn:hover{
+    		background-color:white;
+    		color:red;
+    	}
+	</style>
+		<script>	
+
+	var ATM = ['Jan Oblak','Antonio Adán','José Giménez','Lucas Hernández',
+		'Stefan Savic','Diego Godín','Santiago Arias','Filipe Luís','Juanfran','Saúl Níguez',
+		'Koke','Rodri','Thomas','Antoine Griezmann','Thomas Lemar','Diego Costa','Gelson Martins',
+		'Ángel Correa','Vitolo','Nikola Kalinic'];
+
+	var RM = ['Thibaut Courtois','Keylor Navas','Kiko Casilla','Raphaël Varane','Marcelo',
+		'Daniel Carvajal','Sergio Ramos','Nacho Fernández','Álvaro Odriozola','Jesús Vallejo',
+		'Sergio Reguilón','Isco','Toni Kroos','Casemiro','Luka Modric','Dani Ceballos','Marcos Llorente','Federico Valverde',
+		'Gareth Bale','Marco Asensio','Karim Benzema','Vinícius Júnior','Lucas Vázquez','Mariano Díaz'];
+
+	var VFC = ['Neto','Jaume Doménech','José Gayà','Gabriel Paulista','Jeison Murillo','Mouctar Diakhaby',
+		'Ezequiel Garay','Cristiano Piccini','Rúben Vezo','Toni Lato','Geoffrey Kondogbia',
+		'Carlos Soler','Dani Parejo','Daniel Wass','Francis Coquelin','Rodrigo','Michy Batshuayi',
+    	'Gonçalo Guedes','Santi Mina','Kévin Gameiro','Denis Cheryshev','Ferrán Torres'];
+
+
+
+			function seleccionEquipo(){
+				var jugadores=document.getElementById('jugadores');
+				if(document.getElementById('Equipos').value =="1"){
+					jugadores.length=RM.length;
+					for (var i = 0; i < RM.length; i++) {
+						jugadores.options[i].text=RM[i];
+					}
+
+				}else if(document.getElementById('Equipos').value == "2"){
+					jugadores.length=VFC.length;
+					for (var i = 0; i < VFC.length; i++) {
+						jugadores.options[i].text=VFC[i];
+						
+					}
+				}else{
+					jugadores.length=ATM.length;
+					for (var i = 0; i < ATM.length; i++) {
+						jugadores.options[i].text=ATM[i];
+						
+					}
+				}
+			}
+
+			function asignarEventos(){
+  		  		document.getElementById('Equipos').addEventListener("change",seleccionEquipo); 
+ 			}
+	document.addEventListener('DOMContentLoaded',asignarEventos); 
+
+</script>
+</head>
+<body>
+
+<select class="btn" name="Equipos" id="Equipos">
+	<option value="1">Real Madrid</option>
+	<option value="2">Valencia</option>
+	<option value="3">Atletico Madrid</option>
+</select>	
+<br>
+<select class="btn" name="jugadores" id="jugadores">
+	<script>
+		jugadores.length=RM.length;
+		for (var i = 0; i < RM.length; i++) {
+			jugadores.options[i].text=RM[i];
+		}
+	</script>
+</select>
+</body>
+</html>
+
+
+
+
+
+
+<br><br><br><br><br>

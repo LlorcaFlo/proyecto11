@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if (! isset($_SESSION['user']['id'])) {
@@ -27,9 +26,7 @@ if (! isset($_SESSION['user']['id'])) {
        $categoria =$_GET['categoria'];
 
     }?>
-
-
-
+    
 <!-- OJO!! los values van entrecomillados -->
 
 <meta charset="utf-8">

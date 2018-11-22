@@ -1,0 +1,15 @@
+body {
+	font-family: sans-serif;
+}
+
+.errorf{
+	color:red;
+	font-size: 80%;
+}
+
+form p{
+	margin: 0 0 10px 0;
+	font-size: 1.2em;
+	line-height: 25px;
+}
+

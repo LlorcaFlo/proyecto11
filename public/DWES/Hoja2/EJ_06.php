@@ -2,7 +2,7 @@
 Después del 100 el programa debe escribir "Fin de Programa" en una línea nueva. -->
 <?php
 	for($i=1;$i<=100;$i++){
-			echo "Número " .$i . " ";
+			echo "Número " . $i . " ";
 		if($i % 10==0) {
 			echo "<br>";
 		}

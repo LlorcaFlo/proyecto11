@@ -4,7 +4,6 @@ class Entradas extends Conexion{
 
 	public $table = 'entradas';
 
-
 	public function buscatitulo($titulo, $categoria){
 
 		$buscatitulo = "SELECT * FROM entradas WHERE titulo = :titulo AND categoria = :categoria";
@@ -14,21 +13,22 @@ class Entradas extends Conexion{
 		
         	if($prepare->rowCount()){
             	return true;
-                
             }else{
             	return false;
             } 
 	}  
 
+
     public function borrarentradas($id){
         $this->db->query("DELETE FROM entradas WHERE id_entradas = $id");
     }   
 
+
     public function borrartodo($id){
         $this->db->query("DELETE FROM entradas WHERE id_usuario = $id");
-
         }
-    public function busID($titulo, $categoria){
+
+    public function busIDuser($titulo, $categoria){
 
         $busid = "SELECT id_usuario FROM entradas WHERE titulo = :titulo AND categoria =:categoria";
 

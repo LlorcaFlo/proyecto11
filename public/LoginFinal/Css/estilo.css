@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+body{
+background-image: linear-gradient(to left, rgba(85,85,85,0.5), rgba(128,128,182,0.5));
+font-family: 'Poor Story', cursive;
+font-weight: bold;
+}
+div {
+	background-image: linear-gradient(to right, rgb(40, 40, 40),rgb(0, 0, 0));
+	font-family: 'Poor Story', cursive;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: auto;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.dos{
+	margin-left: 0;
+	border-radius: 50%;
+}
+p,a,h1,h2,h3,h4,h5,h6{
+	color: rgb(255, 255, 255);
+	text-shadow: 3px 4px 4px rgb(175, 175, 175);
+	/*font-size: 18px;*/
+	font-weight: bold;
+}
+.inicio{
+	margin: auto;
+	width: 200px;
+	text-align: center;
+	border-radius:2px;
+	border: 1px dotted grey;
+}
+a:hover{
+	color: rgba(255, 0, 0, 0.7);
+
+}
+.errorf{
+    color: red;
+    font-size: 90%;
+
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}
+.btn{
+	background-color: grey;
+	border-color: red;
+	color: white;
+}
+.btn:hover{
+	color: rgba(255, 0, 0, 0.7);
+	
+}

@@ -14,7 +14,7 @@ $n = 4;
 
 $solucion = factorial($m) / (factorial($n) * factorial($m-$n));
 
-echo "el resultado es " . $solucion;
+echo "El resultado es " . $solucion;
 
 ?>
 

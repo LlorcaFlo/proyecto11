@@ -1,0 +1,23 @@
+﻿<cabezera>
+    <titulo>Biblioteca</titulo>
+    <ficha>Ficha de préstamo a domicilio</ficha>
+  </cabezera>
+  <cuerpo>
+      <datos_del_lector>
+        <nombre>José</nombre>
+        <apellidos>Llorca</apellidos>
+        <domicilio>Calle Palamos</domicilio>
+        <telefono>654398951</telefono>
+      </datos_del_lector>
+      <datos_del_libro>
+        <autor>StephenKing</autor>
+        <titulo>Cell</titulo>
+        <clasificacion>Terror</clasificacion> 
+      </datos_del_libro>  
+  </cuerpo>
+  <pie>
+    <fecha>25/10/18</fecha>
+    <entrega>25/11/18</entrega>
+    <firma_de_recibo>Pepe</firma_de_recibo>  
+  </pie>
+</prestamo>

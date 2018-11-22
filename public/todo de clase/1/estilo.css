@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body{
+     background-image: linear-gradient(to left, dodgerblue,cadetblue);
+     font-family: 'Press Start 2P', cursive;
+     font-size: 12px;
+}
+div {
+    margin: 0 auto;
+    background-image: linear-gradient(to right, black, black);
+    width: 300px;
+    color: white;
+    text-shadow: 1px 1px 1px grey;
+    text-align: center;
+    border-radius: 5px;
+}
+h6{
+    border-style: double;
+    border-color: red;
+}
+.errorf{
+    color: red;
+    font-size: 75%;
+    text-shadow: 1px 1px 0 white;
+}
+form p{
+    font-size: 20px;
+    margin: 0 0 10px 0; 
+    font-size: 20px;
+    line-height: 25px;
+}
+input{
+    text-align: center;
+    border-radius: 5px;
+}
+select{
+    font-size: 20px;
+}
+label{
+    display: inline-block;
+    width: 140px;
+}
+.listaerrores{
+    background-color: #fcc;
+    color: red;
+    padding: 10px 30px;
+}
+.listaerrores li{
+    margin-bottom: 3px;
+}
+.btn{
+    background-color: black;
+    border-color: white;
+    border-radius: 50%;
+    color:white;
+}
+.btn:hover{
+    border-color: red;
+    background-color:white;
+    color:red;
+}
+.btn:active{
+    color:yellow;
+    border-color: yellow;
+    background-color:black;
+}
+a{
+    color: white;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:yellow;
+}
+#texto{
+    color:rgba(155,255,155,0.5);
+}

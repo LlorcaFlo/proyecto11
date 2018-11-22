@@ -17,20 +17,19 @@ spl_autoload_register(function($class){
         $con = new Conexion();
 
             try {
-                $sentencia = "SELECT * FROM entradas";
-
-                $registros = $con->db->query($sentencia)->fetchAll(PDO::FETCH_OBJ);
+    
+                $productos = $con->db->query("SELECT * FROM productos")->fetchAll(PDO::FETCH_OBJ);
 
             foreach ($registros as $entrada ) {
 
-                        $id = $entrada->id_entradas;
+                        // $id = $entrada->id_entradas;
                 echo
                     '<br>
-                    <div style="width:300px;"><br><p>Titulo: ' 
-                    . $entrada->titulo . '</p>' . 
-                    '<p>Autor:' . $entrada->autor . '</p>' . 
+                    <div style="width:300px;"><br><p>Nombre: ' 
+                    . $entrada->nombre . '</p>' . 
+                    '<p>Descripcion:' . $entrada->descripcion . '</p>' . 
                     '<p>Fecha:' . $entrada->fecha . '</p>' . 
-                    '<p>Categoria:' . $entrada->categoria . '</p><br>' .
+                    '<p>Marca:' . $entrada->marca . '</p><br>' .
                     '<a class="btn" href="paginapost.php?id=' . $id . '">Ir al post</a><br><br></div>';
                 }
 

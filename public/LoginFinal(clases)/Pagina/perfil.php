@@ -1,5 +1,6 @@
 <?php
 session_start ();
+
 if (! isset($_SESSION['user']['id'])) {
 header('location:../Pagina/perfilrestringido.php');
 }
@@ -8,7 +9,7 @@ header('location:../Pagina/perfilrestringido.php');
  <link rel="stylesheet" type="text/css" href="../Css/bootstrap.min.css">
  <link rel="stylesheet" type="text/css" href="../Css/estilo.css">
  <body>
-<div class="col-6"><br>
+<div class="col-3"><br>
         <div class="form-group">
         <p>Esta es tu página de perfil
    

@@ -1,0 +1,15 @@
+﻿<licencia>
+  <cabezera>
+    <titulo>Xunta de Galizia</titulo>
+    <subititulo>Conselleria Do Mar</subititulo>  
+  </cabezera>
+  <cuerpo>
+    <descripcion>Licencia de pesca maritima</descripcion> 
+    <numero>21</numero>
+    <clase>B</clase>
+    <caduca>21/07/2050</caduca>
+    <dni>46731989</dni>
+    <nombre>Luis</nombre> 
+  </cuerpo>
+  <pie>Nota</pie>
+</licencia>

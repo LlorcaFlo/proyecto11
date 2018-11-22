@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+
+    <script>
+
+       document.addEventListener ( 'DOMContentLoaded', () => {
+          let nombre = document.getElementById ( 'nombre' );
+          let apellido = document.getElementById ( 'apellido' );
+          let submit = document.getElementById ( 'submit' );
+          let poblaciones = [ 'Cartagena', 'Calasparra',  'Fortuna', 'Jumilla', 'Yecla' ];
+          let seleccion = document.getElementById ( 'poblacion' );
+          let murciano = document.getElementById ( 'murciano' );
+          let no_murciano = document.getElementById ( 'no_murciano' );
+
+          submit.addEventListener ( 'click', validaFormulario );
+
+          murciano.addEventListener ( 'click', e => {
+             seleccion.length = poblaciones.length;
+             for ( let z = 0; z < poblaciones.length; z ++ ) {
+                seleccion.options[ z ].text = poblaciones[ z ];
+             }
+             seleccion.style.visibility = 'visible';
+          } );
+
+          function validaFormulario ( e ) {
+
+             if ( nombre.value !== '' && apellido.value !== ''
+                && validaNombre ( nombre.value, apellido.value )
+                && validaRadio ( no_murciano.value ) ) {
+                document.write ( 'Enviando.' );
+             } else {
+                document.write ( 'No válido.' );
+                e.preventDefault ();
+             }
+          }
+
+          function validaNombre ( nombre, apellido )
+          {
+             if ( nombre.search ( /^[A-Z][a-z]{1,24}/ ) !== - 1 ) {
+                if ( apellido.search ( /^[A-Z][a-z]{1,50}/ ) !== - 1 ) return true;
+             }
+             return false;
+          }
+
+          function validaRadio ( radio )
+          {
+             if ( radio === 'no_murciano' ) return true;
+             else return seleccion.value !== '';
+          }
+
+       } );
+
+    </script>
+</head>
+<body>
+
+<form action="#">
+  <div style="width: 300px; margin: auto;">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre"><br><br>
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido"><br><br>
+    <label for="murciano"></label>
+    <input type="radio" name='murciano' id="murciano" value="murciano">Murcia<br>
+    <input type="radio" name='murciano' id="no_murciano" value="no_murciano">Otra provincia<br><br>
+    <select name="poblacion" id="poblacion" style="visibility: hidden">
+        <option></option>
+    </select><br><br>
+    <input type="submit" id="submit" value="Enviar">
+    
+  </div>
+</form>
+
+</body>
+</html>

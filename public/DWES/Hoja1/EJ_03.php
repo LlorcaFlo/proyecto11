@@ -1,8 +1,8 @@
-<!-- Dado el radio de una circunferencia, calcular su longitud así como su área -->
+<!-- Dado el radio de una circunferencia,
+ calcular su longitud así como su área -->
 <?php
 
 $radio=2.5;
-
 $longitud=2*pi()*$radio;
 $area = pow(pi()*2) * $radio;
 

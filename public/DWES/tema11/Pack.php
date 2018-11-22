@@ -3,7 +3,6 @@
 class Pack implements iEnCarrito
 {
 	use MasMenos;
-	use EnlaceComprar;
 
 	private $productosPack;
 
@@ -51,20 +50,6 @@ class Pack implements iEnCarrito
 		}
 
 		return $total * $this->cantidad;
-	}
-
-	public function detalles()
-	{
-		foreach ($this->productosPack as $producto) {
-			echo '<i>' . $producto . '</i>';
-		}
-	}
-
-	public function __toString()
-	{
-		$salida = '<br>Pack: ' . $this->precio() . " &euro;";
-		$salida .= $this->enlaceComprar();
-		return $salida;
 	}
 
 }

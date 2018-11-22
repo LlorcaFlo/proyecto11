@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+
+	<style type="text/css">
+
+	input{
+		float: left;
+		margin: 2px;
+	}
+	.btn{
+		background-color: white;
+		border: 1px groove yellow;
+		border-radius: 4px;
+	}
+	.btn1{
+		width: 28px;
+	}
+
+	</style>
+	<script type="text/javascript" src="01.js">
+	</script>
+
+</head>
+<body>
+
+	<form>
+
+	<h3 style="background:linear-gradient(white,yellow);color:black;
+		text-align:center; width:300px; margin: auto; border:1px groove black;
+		border-radius: 3px;">Calculadora</h3><br>
+
+	<div style="margin: auto; width:210px; border:1px dotted black;
+	border-radius: 3px; background:linear-gradient(grey,silver)"><br>
+	
+	<div style="margin: auto;">
+		<input style="margin: auto; type="text" id="pantalla" name="pantalla"><br><br>
+	</div>
+	
+
+	<div style="width: 100px; float:left;">
+	<input class="btn" type="button" id="1" value="1" onclick="pantalla_numeros(1)">
+	<input class="btn" type="button" id="2" value="2" onclick="pantalla_numeros(2)">
+	<input class="btn" type="button" id="3" value="3" onclick="pantalla_numeros(3)">
+	<br>	
+	<input class="btn" type="button" id="4" value="4" onclick="pantalla_numeros(4)">
+	<input class="btn" type="button" id="5" value="5" onclick="pantalla_numeros(5)">
+	<input class="btn"type="button" id="6" value="6" onclick="pantalla_numeros(6)">
+	<br>	
+	<input class="btn" type="button" id="7" value="7" onclick="pantalla_numeros(7)">
+	<input class="btn" type="button" id="8" value="8" onclick="pantalla_numeros(8)">
+	<input class="btn" type="button" id="9" value="9" onclick="pantalla_numeros(9)">
+	<input class="btn" type="button" id="0" value="0" onclick="pantalla_numeros(0)">
+	</div>
+
+	<div style="width: 80px;float: left;">
+	<input class="btn btn1" type="button" id ="sumar" name="sumar" value="+" onClick="suma()">
+	<input class="btn btn1" type="button" id="multiplicar" name="multiplicar" value="*" onClick="multipliacion()"><br>
+
+	<input class="btn btn1" type="button" id="restar" name="restar" value="-" onClick="resta()">
+	<input class="btn btn1" type="button" id="dividir" name="dividir" value="/" onClick="division()">
+	<br>
+
+	<input class="btn btn1" type="button" id="igual" value="=" onClick="resultado()">
+	<input class="btn btn1" type="button" id="reseteo" value="c" onClick="reset()">
+	<br>
+	</div>
+	
+	<textarea id="resultados" name="resultados" rows="3"></textarea><br><br>
+
+	</div>
+
+		
+	</form>
+
+</body>
+</html>

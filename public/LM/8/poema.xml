@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Poemas>
+  <poema>
+    <titulo>Poema de la guerra</titulo>
+    <autor fecha_nacimiento="1875" fecha_muerte="1939">Antonio Machado</autor>
+    <estilo>Modernismo</estilo>
+    <movimiento>Generación del 98</movimiento>
+    <estrofas>
+      <estrofa numero="1">
+        <linea numero="1">Otra vez en la noche...Es el martillo</linea>
+        <linea numero="2">de la fiebre en las sienes bien venidas</linea>
+        <linea numero="3">del niño.-Madre, ¡el pájar amarillo!</linea>
+        <linea numero="4">¡las mariposas negras y moradas!</linea>
+        <linea numero="5">Duerme, hijo mío. - Y la manita oprime</linea>
+        <linea numero="6">La madre, junto al lecho-. ¡Oh flor de fuego!</linea>
+        <linea numero="7">¿Quién ha de helarte, flor de sangre, dime: </linea>
+        <linea numero="8">Hay en la pobre alcoba olor de espliego; </linea>
+      </estrofa>
+    </estrofas>
+  </poema>
+</Poemas>

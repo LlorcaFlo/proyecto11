@@ -15,30 +15,29 @@ session_start();
             <p>Inicia sesión o con <spam style="color:red";>Nick</spam> o con <spam style="color:red";>Email</spam>...</p>
             <br>
         <div class="form-group">
-          
             <label for="nick">Nick</label><br>
-            <input type="text" name="nick" class="form-control" id="nick"
+            <input type="text" name="nick" class="form-control" id="nick" 
             <?php if(isset($_POST['pulsar'])){
                 $val->mostrar_campo('nick');
             }?>
             >
             <?php if(isset($_POST['pulsar'])){
-                $val->mostrar_error_campo('nick', $val->errores);
+                $val->mostrar_error_campo('nick', $val->errores); 
             }?>
             <label for="email">Email</label><br>
             <input type="email" name="email" class="form-control" id="email"
-
+            
             <?php if(isset($_POST['pulsar'])){
                 $val->mostrar_campo('email');
             }?>
             >
             <?php if(isset($_POST['pulsar'])){
-                $val->mostrar_error_campo('email', $val->errores);
+                $val->mostrar_error_campo('email', $val->errores); 
             }?>
             <label for="clavelog">Contraseña</label><br>
             <input type="password" name="clavelog" class="form-control" id="clavelog"><br>
             <?php if(isset($_POST['pulsar'])){
-                $val->mostrar_error_campo('clavelog', $val->errores);
+                $val->mostrar_error_campo('clavelog', $val->errores); 
             }?><br>
             <button type="submit" class="btn" name="pulsar">Enviar</button>
             <br><br>

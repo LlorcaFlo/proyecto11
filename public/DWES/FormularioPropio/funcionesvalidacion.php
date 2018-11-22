@@ -1,4 +1,18 @@
 <?php
+
+function va_nick($campo){
+	if (isset($_POST[$campo])){
+		if (strlen($_POST[$campo]) < 4 ){
+			return "Nick demasiado corto.";
+	}else{
+		return null;
+	}
+	
+}else {
+		return "Nick no recibido.";
+	}
+}
+
 function va_nombre($campo){
 
 	if (isset($_POST[$campo])){
@@ -79,6 +93,7 @@ function va_codiPostal($campo){
 
 	if(isset ($_POST[$campo])){
 	$_POST[$campo] = format_entra($campo);
+
 	if ( strlen($_POST['codigopostal']) != 5) {
 			return 'El código postal debe contener al menos "5" dígitos.';
 		}
@@ -95,10 +110,25 @@ function va_codiPostal($campo){
 	   }
 }
 
+function va_telefono($campo){
+	if(isset($_POST[$campo])){
+		$_POST[$campo] = format_entra($campo);
+
+		if ( strlen($_POST['telefono']) != 9) {
+			return 'El teléfono debe contener al menos "9" dígitos.';
+		}elseif (! preg_match('/^([0-9]{9})+$/',$_POST['telefono'])){
+			$errores['telefono'] = "El teléfono no es válido, solo se permiten números.";
+			}
+			else {
+	    	return null;
+	   }
+	}else{
+		return 'No se ha recibido el Teléfono.';
+	}
+}
 
 
 function format_entra($campo){
-
 	if ( isset($_POST[$campo])){
   $_POST[$campo] = trim($_POST[$campo]);
   $_POST[$campo] = strip_tags($_POST[$campo]);

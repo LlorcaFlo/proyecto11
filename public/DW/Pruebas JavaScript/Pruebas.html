@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pruebas</title>
+	<style type="text/css">
+		
+		.btn{
+			background-color: blue;
+		}
+	</style>
+	
+
+	<script type="text/javascript">
+		
+	document.addEventListener("DOMContentLoaded", () =>{
+
+		var vaciado =[];
+
+		var array = ['Hola', 'Amigo', 'Yo', 'y', 'mis', 'amigas', 'te', 'esperamos'];
+
+		var div = document.getElementById("uno");
+		var boton = document.getElementById("boton");
+		var text = document.getElementById("text");
+		var select = document.getElementById("seleccion");
+		var boton2 = document.getElementById("boton2");
+		var boton3 = document.getElementById("boton3");
+		var dos =  document.getElementById("dos");
+	
+		//var boton3 = document.getElementById("boton3");
+
+		boton.addEventListener("click",muestra);
+		boton1.addEventListener("click",borrar);
+		boton2.addEventListener("click",recarga);
+		boton3.addEventListener("click",create);
+		
+
+
+		function muestra(){
+			div.innerHTML = "Hola";
+			text.value = "Apruebame";
+			}	
+
+			function ingresa(){
+
+			}
+
+		function borrar(){
+			text.value = "";
+			div.innerHTML = "";
+			cambio();
+			document.write("Página borrada");
+		}
+
+
+		function create(){
+   		//Aquí instanciamos al componente padre
+   			var dos = document.getElementById("dos");
+   		//Aquí agregamos el componente de tipo input
+   			var input = document.createElement("INPUT");
+   			var boton = document.createElement("BUTTON");
+
+   		//Aquí indicamos que es un input de tipo text
+   			input.type = 'text';
+   			input.id = 'dosinput';
+   			input.size = "6";
+   			input.placeholder= "Ingrese texto.";
+
+   			boton.type = 'button';
+   			boton.id = 'dosboton';
+   			boton.class = "btn";
+   			boton.value = "Ingresa";
+   
+   		//Y por ultimo agreamos el componente creado al padre
+  			dos.appendChild(input);
+  			dos.appendChild(boton);
+ 		}
+
+		// function recarga(){
+
+		//   	seleccion.options.lenght=0;
+
+		// 	for(var i=0 ;i<array.lenght; i++){
+
+		//   		var option = document.createElement("option");
+		//   		var texto = document.createTextNode(array[i]);
+		//   		option.appendChild(texto);
+		//   		// option.value = i;
+		//   		seleccion.appendChild(option);
+
+		//  	}
+		//  }
+
+		function recarga(){
+
+			seleccion.length=array.length;
+				for (var i = 0; i < array.length; i++){
+				seleccion.options[i].text=array[i];
+				seleccion.options[i].value=i;
+				}
+		}
+
+		function cambio(){
+			seleccion.length=vaciado.length;
+		}
+	});
+
+
+	</script>
+
+
+
+</head>
+<body>
+		<div id="uno"></div>
+		<input type="button" class="btn" name="boton" id="boton" value="Cargar">
+		<input type="text" name="text" id="text">
+
+		<select name="select" id="seleccion">
+			
+		</select>
+		<input type="button" name="boton" id="boton1" value="Borrar">
+		<input type="button" name="" id="boton2" value="Recargar">
+		<input type="button" name="" id="boton3" value="Crear">
+
+
+
+		<div id="dos">
+
+
+		</div>
+</body>
+</html>

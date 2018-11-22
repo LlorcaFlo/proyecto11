@@ -1,49 +1,39 @@
-body{
-  background-image: linear-gradient(to right, snow, floralwhite);
-  font-family: Lucida Console;
-  }
-
-h1{
-  outline-style: dotted;
-  outline-color: black;
-  outline-width: 5px;
-  border-style: double;
-  border-width: 5px;
-  border-color: grey;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+div {
+	background-image: linear-gradient(to right, rgb(40, 40, 40),rgb(0, 0, 0));
+	font-family: 'Gloria Hallelujah', cursive;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
 }
-h4{
-  color:black;
-  font-size: 15px;
+
+a, h1, h3, li {
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 2px rgb(175, 175, 175);
+}
+input{
+	border-color: red;
+}
+form{
+	text-align: center;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(40, 40, 40));
+	margin: 0 auto;
+	
+	border-color: rgb(175, 175, 175);
+}
+p{
+	text-align: left;
+}
+
+a:hover{
+	color:red;
+}
+.btn{
+	border-color: red;
+	border-radius: 30%;
 }
 .errorf{
     color: red;
     font-size: 80%;
-    text-shadow: 0 0 0;
-
-}
-input{
-    font-size: 1.1em;
-    border-radius: 5px;
-    background-position: ;
-}
-form p{
-    margin: 0 0 5px 0;
-    font-size: 1.2em;
-    line-height: 25px;
-}
-select{
-    font-size: 1.2em;
-}
-label{
-    display: inline-block;
-    width: 200px;
-}
-.listaerrores{
-    background-color: #fcc;
-    color: red;
-    padding: 10px 30px;
-}
-.listaerrores li{
-    margin-bottom: 3px;
 }

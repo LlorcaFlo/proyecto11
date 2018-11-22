@@ -6,8 +6,6 @@ spl_autoload_register(function($clase) {
 });
 
 session_start();
-$carrito = Carrito::getCarrito();
-$carrito->guardaEstadoCookie('carrito');
 session_destroy();
 
 ?>
